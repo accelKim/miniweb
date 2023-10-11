@@ -1,0 +1,31 @@
+/* container */ 
+@media (min-width: 1240px) { 
+    .container {width: 1240px;margin: 0 auto;}
+}
+@media (max-width: 1239px) and (min-width: 768px) { 
+    .container {width: 100%;box-sizing: border-box;padding-left: 20px;padding-right: 20px;}
+}
+@media (max-width: 767px) {
+    .container {position: relative;width: 100%;box-sizing: border-box;padding-left: 20px;padding-right: 20px;}
+}
+
+/* 초기화 */
+#wrapper {color: #232323;font-family: 'notokr-regular', Sans-Serif;}
+a {text-decoration: none;}
+button {border: none;padding: 0;outline: none;}
+h1, h2, h3, h4 {margin: 0;font-weight: normal;}
+ul {margin: 0;padding: 0;}
+html{overflow-x: hidden;}
+body {overflow-x: hidden;overflow-y: scroll;}
+/* 기본 틀 */
+@media (min-width: 1240px) { 
+    #wrapper {font-size: 16px;line-height: 31px;letter-spacing: -0.32px;position: relative;margin-top: 3px;}
+    /*#wrapper::before {*//*    content: "";*//*    position: absolute;*//*    top: 0;*//*    left: 0;*//*    width: 100%;*//*    height: 3px;*//*    background: linear-gradient(to left, #39b8fd, #9f3dff, #f354b1 );*//*}*/
+}
+@media (max-width: 1239px) and (min-width: 768px) { 
+    #wrapper {font-size: 14px;line-height: 24px;letter-spacing: -0.24px;}
+}
+
+@media (max-width: 767px) { 
+    #wrapper {font-size: 14px;line-height: 24px;letter-spacing: -0.24px;}
+}
