@@ -9,7 +9,7 @@ const Header = () => {
           <Navbar.Brand href="#home">
             {/* 여기에 로고 이미지를 추가 */}
             <img
-              src="ori-logo.png"
+              src="logo.png"
               width="160"
               height="102"
               alt="ori-logo"
