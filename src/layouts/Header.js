@@ -6,7 +6,17 @@ const Header = () => {
     <header>
       <Navbar bg="primary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">오리대학교 Ori University</Navbar.Brand>
+          <Nav className="me-auto">
+          <Navbar.Brand href="#home">
+            {/* 여기에 로고 이미지를 추가 */}
+            <img
+              src="ori-logo.png"
+              width="160"
+              height="102"
+              className=""
+            />
+          </Navbar.Brand>
+          </Nav>
           <Nav className="me-auto">
             <Nav.Link href="#intro">학교소개</Nav.Link>
             <Nav.Link href="#undergraduate_major">학부전공</Nav.Link>
