@@ -5,12 +5,13 @@ import App from './App';
 //import Notice from './notice'
 import Schedule from './schedule';
 import Calendar from './calendar';
+import A8 from './a8'
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Calendar />
+    <A8 />
   </React.StrictMode>
 );
