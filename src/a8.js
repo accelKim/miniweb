@@ -37,7 +37,7 @@ function A8 () {
     lineWidth={'2px'}
     lineColor={'skyblue'}
     lineBorderRadius={'10px'}
-    label={<StyledNode className='main'>총장</StyledNode>}>
+    label={<StyledNode className='main' style={{color:'white'}}>총장</StyledNode>}>
 
     <TreeNode label={<StyledNode>총괄부총장</StyledNode>}>
       <TreeNode label={<StyledNode>정화건학이념아카데미</StyledNode>}></TreeNode>
