@@ -6,7 +6,7 @@ import Layout from "./layouts/Layout";
 function App() {
   return (
     <Layout>
-      <Container style={{ minHeight: '75vh' }}>Main 페이지입니다.</Container>
+      <Container style={{ minHeight: '75vh' }}>Main</Container>
     </Layout>
   );
 }
