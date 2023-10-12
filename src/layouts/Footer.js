@@ -1,13 +1,6 @@
 import React from 'react';
 import './Footer.css';
 
-function Logo() {
-  const LogoImg = {
-    width : 30,
-    height : 50,
-  };
-}
-
 
 const Footer = () => {
   return (
@@ -17,11 +10,11 @@ const Footer = () => {
       <h2> 오리대학교</h2>오리대학교는 평생교육법에 의한 전공대학입니다.
     </p>
     <div class="icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
+      {/* <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-linkedin"></i></a>
       <a href="#"><i class="fa fa-google-plus"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a> */}
     </div>
   </div>
   <div class="footer-center col-md-4 col-sm-6">
