@@ -1,29 +1,48 @@
 import React from 'react';
-import '../css/main.css';
+import '../css/Footer.css';
 
 function Footer() {
   return (
-      <footer>
-        {/* 푸터에 표시할 메뉴와 SNS 계정 링크는 #bottomMenu로 묶고, 회사 주소와 연락처는 #company로 묶음 */}
-        <div id="bottomMenu">
-          <ul>
-            <li><a href="#">회사 소개</a></li>
-            <li><a href="#"></a>개인정보처리방침</li>
-            <li><a href="#"></a>여행약관</li>
-            <li><a href="#"></a>사이트맵</li>
-          </ul>
-          <div id="sns">
-            <ul>
-              <li><a href="#"><img src="images/sns-1.png" alt="" /></a></li>
-              <li><a href="#"><img src="images/sns-2.png" alt="" /></a></li>
-              <li><a href="#"><img src="images/sns-3.png" alt="" /></a></li>
-            </ul>
-          </div>
+    <footer class="footer">
+      <div class="footer-left col-md-4 col-sm-6">
+        <p class="about">
+          <h2> 오리대학교</h2>오리대학교는 평생교육법에 의한 전공대학입니다.
+        </p>
+        <div class="icons">
+          {/* <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a> */}
         </div>
-        <div id="company">
-          <p>제주특별자치도 ***동 ***로 *** (대표전화) 123-456-7890</p>
+      </div>
+      <div class="footer-center col-md-4 col-sm-6">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>경기도 성남시 분당구 성남대로 34</span>하나프라자 6층</p>
         </div>
-      </footer>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>0507-1309-9319</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="#">kosta01@kosta.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right col-md-4 col-sm-6">
+        <img class="footer-logo" alt='logo' src="/img/logo.png" style={{ width: 200, height: 130 }} />
+        <p class="menu">
+          <a href="#">  관련사이트</a> |
+          <a href="#">  입학안내</a> |
+          <a href="#">  원격교육</a> |
+          <a href="#">  종합정보시스템</a> |
+          <a href="#">  학술정보관</a> |
+          <a href="#">  커리어매니지먼트센터</a>
+        </p>
+        <p class="name">ⓒ Since 2023 Ori College, All Rights Reserved.</p>
+      </div>
+    </footer>
   );
 };
 
