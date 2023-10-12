@@ -9,14 +9,8 @@
     .container {position: relative;width: 100%;box-sizing: border-box;padding-left: 20px;padding-right: 20px;}
 }
 
-/* 초기화 */
-#wrapper {color: #232323;font-family: 'notokr-regular', Sans-Serif;}
-a {text-decoration: none;}
-button {border: none;padding: 0;outline: none;}
-h1, h2, h3, h4 {margin: 0;font-weight: normal;}
-ul {margin: 0;padding: 0;}
-html{overflow-x: hidden;}
-body {overflow-x: hidden;overflow-y: scroll;}
+
+
 /* 기본 틀 */
 @media (min-width: 1240px) { 
     #wrapper {font-size: 16px;line-height: 31px;letter-spacing: -0.32px;position: relative;margin-top: 3px;}
@@ -119,7 +113,7 @@ body {overflow-x: hidden;overflow-y: scroll;}
     .type_button.monthly {border-right: 1px solid #707070;}
     .type_button.annualy.active {margin-left: -1px;}
     .type_button img{width: 26px;margin-right: 9px;}
-    .calendar_button_section {display: table;table-layout: fixed;border-collapse: collapse;height: 40px;width: 100%;position: absolute;margin-top: 0;text-align: left;}
+    .calendar_button_section {display: table;table-layout: fixed;border-collapse: collapse;height: 40px;width: 100%;position: relative;margin-top: 0;text-align: left;}
     .type_button {display: table-cell;width: 50%;height: 50px;border: 1px solid #e5e5e5;}
     .type_button:last-child {border-radius : 0px 5px 5px 0px;}
     .type_button:first-child {border-radius : 5px 0px 0px 5px;}
@@ -132,7 +126,7 @@ body {overflow-x: hidden;overflow-y: scroll;}
     .type_button.monthly {}
     /*border-right: 1px solid #707070;*/
     
-    .calendar_button_section {display: table;table-layout: fixed;border-collapse: collapse;height: 40px;width: 100%;position: absolute;margin-top: 0;text-align: left;}
+    .calendar_button_section {display: table;table-layout: fixed;border-collapse: collapse;height: 40px;width: 100%;position: relative;margin-top: 0;text-align: left;}
     .type_button span{font-size: 14px; letter-spacing: -0.28px; line-height: 40px;}
     .type_button:not(:last-child) {margin-right : 0px;}
     .type_button img{width: 26px;}
