@@ -15,13 +15,6 @@ function Home() {
             <Notice />
             <Schedule />
             <Footer />
-
-
-
-
-
-
-            
         </div>
     );
 };
