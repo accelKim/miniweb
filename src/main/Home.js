@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Header from '../layouts/Header'
-import Footer from "../layouts/Footer";
-import QuickUnderGraduate from "./QuickUnderGraduate";
+import Slide from "./slide";
 import Notice from "./notice";
 import Schedule from "./schedule";
-import Slide from "./slide";
+import QuickUnderGraduate from "./QuickUnderGraduate";
+import Footer from "../layouts/Footer";
 
 function Home() {
     return (

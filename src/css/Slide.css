@@ -1,5 +1,6 @@
 #slideShow {
-    width: 1800px;
+    width: 100%;
+    max-width: 1200px; /* 최대 너비를 지정하여 화면이 너무 커지지 않도록 합니다 */
     margin: auto;
     height: auto;
     overflow: hidden;
@@ -9,12 +10,12 @@
 #slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    overflow: hidden; /* 슬라이드의 내용이 화면을 벗어나는 경우 가려지도록 설정 */
 }
 
 #slides > img {
-    width: 100%;
-    float: left;
-    height: 100%;
+    max-width: 100%; /* 이미지의 최대 너비를 화면 너비에 맞춥니다 */
+    height: auto;
     object-fit: cover;
 }
 
@@ -29,6 +30,7 @@
     font-size: 24px;
     opacity: 0.5;
 }
+
 #prev {
     left: 0;
 }
@@ -36,14 +38,11 @@
 #next {
     right: 0;
 }
-#slide > button:hover {
-    background-color: #222;
-    color: #fff;
-    opacity: 0.6;
-    cursor: pointer;
-}
 
-#slide > button:focus {
-    outline: 0;
+/* 화면 크기에 따라 슬라이드의 버튼 크기를 조정합니다 */
+@media (max-width: 768px) {
+    #slides > button {
+        padding: 10px;
+        font-size: 18px;
+    }
 }
-
