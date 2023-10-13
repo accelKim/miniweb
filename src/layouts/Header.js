@@ -50,9 +50,11 @@ function Header() {
                                 <li><a href="#">장바구니</a></li>
                             </ul>
                         </li>
-                        <button id="kakaoLoginBtn">Login</button>
                     </ul>
                 </nav>
+                <div id="kakaoLoginButton">
+                    <button id="kakaoLogin">Login</button>
+                </div>
             </div>
         </header>
     );

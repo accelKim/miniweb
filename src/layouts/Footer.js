@@ -6,7 +6,7 @@ function Footer() {
     <footer class="footer">
       <div class="footer-left col-md-4 col-sm-6">
         <p class="about">
-          <h2> 오리대학교</h2>오리대학교는 평생교육법에 의한 전공대학입니다.
+          <h2> 오리대학교</h2><span>오리대학교는 평생교육법에 의한 전공대학입니다.</span>
         </p>
         <div class="icons">
           {/* <a href="#"><i class="fa fa-facebook"></i></a>

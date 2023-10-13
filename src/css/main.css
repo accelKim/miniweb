@@ -6,6 +6,34 @@
     box-sizing: border-box;
 }
 
+#kakaoLogin {
+    position: absolute;
+    right: 20px; /* 필요한 대로 오른쪽 위치 조정 */
+    top: 10px; /* 필요한 대로 상단 위치 조정 */
+    z-index: 3; /* 다른 콘텐츠 위에 나타나도록 설정 */
+}
+
+#kakaoLoginButton {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 3;
+}
+
+#kakaoLoginButton button {
+    background-color: darkgrey; /* 버튼의 배경색 */
+    color: white; /* 버튼 텍스트 색상 */
+    padding: 10px 20px; /* 버튼 패딩 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#kakaoLoginButton button:hover {
+    background-color: rgb(61, 61, 61);
+}
+
 a {
     text-decoration: none;
 }
@@ -75,7 +103,7 @@ nav {
     position: absolute;
     top: 50%;
     transform: translateY(25%);
-    left: 500px;
+    left: 400px;
 }
 
 #topMenu>li {
