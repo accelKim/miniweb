@@ -3,7 +3,6 @@ import "../css/Notice.css";
 
 function Notice() {
   return (
-    
     <article id="notice" className="notice_section">
     <div className="bg_svg" />
     <div className="container">

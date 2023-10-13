@@ -1,9 +1,3 @@
-
-
-
-
-
-
 /* container */
 @media (min-width: 1240px){
     .container{width: 1240px;margin: 0 auto;}
@@ -188,7 +182,3 @@ button {cursor:pointer ;}
     #schedule .scd_mcontent .scd_mcontent_box_wrapper .scd_mcontent_box.today .scd_mcontent_week{color: #ffffff;}
     #schedule .scd_mcontent .scd_mcontent_box_wrapper .scd_mcontent_box.today .scd_mcontent_day{color: #ffffff;}
 }
-
-
-
-
