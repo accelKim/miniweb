@@ -6,11 +6,8 @@ function Header() {
         <header>
             <div id="menuBar">
                 <div id="logo" className="logo-container">
-                    <a href="index.html">
                         <img src="logo.png" alt="오리대학교 로고" className="logo" />
-                    </a>
                 </div>
-                <nav>
                     <ul id="topMenu">
                         <li><a href="#">학교소개</a>
                             <ul>
@@ -51,7 +48,6 @@ function Header() {
                             </ul>
                         </li>
                     </ul>
-                </nav>
                 <div id="kakaoLoginButton">
                     <button id="kakaoLogin">Login</button>
                 </div>
