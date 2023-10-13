@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom"; // Link 컴포넌트를 import
+import { Link } from "react-router-dom";
 import '../css/Header.css';
 
 function Header() {
@@ -9,13 +9,15 @@ function Header() {
                 <header>
                     <div id="menuBar">
                         <div id="logo" className="logo-container">
-                            <img src="logo.png" alt="오리대학교 로고" className="logo" />
+                            <Link to="/">
+                                <img src="logo.png" alt="오리대학교 로고" className="logo" />
+                            </Link>
                         </div>
                         <ul id="topMenu">
-                            <li><a href="#">학교소개</a>
+                            <li><Link to="/">학교소개</Link>
                                 <ul>
-                                    <li><a href="location">학교 위치</a></li>
-                                    <li><a href="orgChart">기구체계도</a></li>
+                                    <li><Link to="/location">학교 위치</Link></li>
+                                    <li><Link to="/orgChart">기구체계도</Link></li>
                                 </ul>
                             </li>
                             <li><a href="#">학부전공</a>

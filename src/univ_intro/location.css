@@ -1,0 +1,155 @@
+/* 서브페이지 영역 */
+.sub_section{
+    display: inline-block;
+    width: 100%;
+}
+
+.breadcrumb .breadcrumb_item {
+    cursor: pointer;
+}
+
+@media (min-width: 1240px) {
+    .sub_section{margin-bottom: 100px; padding-top: 60px;}
+}
+@media (max-width: 1239px) and (min-width: 768px) {
+    .sub_section{margin-bottom: 50px; }
+}
+@media (max-width: 767px){
+    .sub_section{margin-bottom: 50px;}
+}
+
+.breadcrumb {
+    background-color: #f8f8f8;
+}
+
+.breadcrumb .breadcrumb_list {
+    text-align: right;
+    font-size: 0;
+}
+
+.breadcrumb .breadcrumb_item {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+
+    font-family: notokr-regular, sans-serif;
+    color: #707070;
+}
+
+.breadcrumb .breadcrumb_item:last-child {
+    color: #7b4fb8;
+}
+
+.breadcrumb .breadcrumb_item:not(:last-child)::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #aaaaaa;
+}
+
+@media (min-width: 1240px){
+    .breadcrumb {
+        height: 44px;
+    }
+
+    .breadcrumb .breadcrumb_list {
+    }
+
+    .breadcrumb .breadcrumb_item {
+        line-height: 44px;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+
+    }
+
+    .breadcrumb_item.go_home img {
+        transform: translateY(2px);
+    }
+
+    .breadcrumb .breadcrumb_item:not(:last-child) {
+        padding-right: 15px;
+        margin-right: 15px;
+    }
+
+    .breadcrumb .breadcrumb_item:not(:last-child)::after {
+        width: 1px;
+        height: 10px;
+    }
+
+    .breadcrumb .breadcrumb_item.home img {
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 15px);
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 1239px) and (min-width: 768px){
+    .breadcrumb {
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    .breadcrumb {
+        display: none;
+    }
+}
+
+/* 서브메뉴 영역 : 레이아웃 */
+.sub_menu{float: left;}
+@media (min-width: 1240px){
+    .sub_menu{width: 230px;}
+}
+@media (max-width: 1239px) and (min-width: 768px){
+    .sub_menu{display: none;}
+}
+@media (max-width: 767px){
+    .sub_menu{display: none;}
+}
+
+/* 서브메뉴 영역 : 뎁스 1 */
+.sub_menu .depth1_title{font-family: notokr-medium, sans-serif; line-height: 28px;margin-top: 12px;}
+
+/* 서브메뉴 영역 : 뎁스 2 */
+.sub_menu .depth2_list{width: 100%;margin-top: 40px;}
+.sub_menu .depth2_list .depth2_item{width: 230px;line-height: 60px;border-top: 1px solid #e5e5e5;cursor: pointer;}
+.sub_menu .depth2_list > .depth2_item:last-child{border-bottom: 1px solid #e5e5e5;}
+.sub_menu .depth2_list .depth2_item .depth2_wrapper{padding-left: 20px;padding-right: 20px;width: 100%;box-sizing: border-box;position: relative;}
+.sub_menu .depth2_list .depth2_item .depth2_wrapper img{position: absolute;width: 12px;height: 7px;right: 20px;top: calc(50% - 4px);}
+.sub_menu .depth2_list .depth2_item .depth2_wrapper .submenu_arrow_up{display: none;}
+
+/* 뎁스 2 - 오픈 */
+.sub_menu .depth2_list .depth2_item .depth2_wrapper.current .submenu_arrow_up{display: block;}
+.sub_menu .depth2_list .depth2_item .depth2_wrapper.current .submenu_arrow_down{display: none;}
+.sub_menu .depth2_list .depth2_item .depth2_wrapper.current span{color: #ffffff;}
+.sub_menu .depth2_list .depth2_item .depth2_wrapper.current span{color: #ffffff;}
+
+/* 드롭박스 애니메이션 */
+.sub_menu .depth3_wrapper{max-height: 0;transition: 0.7s;overflow: hidden;}
+
+/* 뎁스3 메뉴가 늘어나면 조절 하는 곳 */
+.sub_menu .depth3_wrapper.current{max-height: 400px;}
+
+/* 서브메뉴 영역 : 뎁스 3 */
+.sub_menu .depth3_wrapper{background-color: #f8f6fc;}
+.sub_menu .depth3_wrapper .depth3_list{padding: 10px 0px 10px 20px;}
+.sub_menu .depth3_wrapper .depth3_list .depth3_item{ cursor: pointer; font-size: 14px;line-height: 40px;margin-left: 13px;color: #707070;position: relative;}
+.sub_menu .depth3_wrapper .depth3_list .depth3_item::before{content: "";position: absolute;left: -13px;top: 19px;width: 3px;height: 3px;background-color: #707070;}
+/* 셀렉 */
+.sub_menu .depth3_wrapper .depth3_list .depth3_item.current{color: #6f4dbb;}
+.sub_menu .depth3_wrapper .depth3_list .depth3_item.current::before{background-color: #6f4dbb;}
+
+
+/* 컨텐츠 영역 */
+@media (min-width: 1240px){
+    .sub_content{float: right;width: 960px;}
+}
+@media (max-width: 1239px) and (min-width: 768px){
+    .sub_content{width: 100%;}
+}
+@media (max-width: 767px){
+    .sub_content{width: 100%;}
+}
