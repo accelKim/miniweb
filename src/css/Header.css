@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Merienda:wght@700&family=Nanum+Gothic:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Merienda:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -50,14 +49,14 @@ ul {
 }
 
 #menuBar {
-    background-color: #1A66B2;
+    background-color: #1a66b2;
     padding: 10px;
     position: relative; /* 상대 위치로 변경 */
     z-index: 2; /* 다른 요소 위에 나타나도록 설정 */
 }
 
 #menuButton:hover {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.632);
 }
 
 header {
@@ -80,7 +79,7 @@ header {
 }
 
 #logo h1 {
-    font-family: 'Nanum Gothic', cursive;
+    font-family: 'Noto Sans Korean', cursive;
     font-weight: 700;
     font-size: 40px;
     color: #fff;

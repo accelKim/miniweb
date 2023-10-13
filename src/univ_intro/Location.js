@@ -22,7 +22,9 @@ function Location() {
                             <li className="depth2_item" menu-id="593">
                                 <div className="depth2_wrapper">
                                     <div className="depth2_wrapper_bg"></div>
-                                    <span>기구체계도</span>
+                                    <Link to="/orgChart">
+                                        <span>기구체계도</span>
+                                    </Link>
                                 </div>
                             </li>
                         </ul>
