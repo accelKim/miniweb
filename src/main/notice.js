@@ -16,7 +16,7 @@ function Notice() {
         </div>
         <div className="nt_header_bottom">
           <ul className="nt_header_category">
-            <li className="nt_header_item">전체</li>
+            <li className="nt_header_item active">전체</li>
             <li className="nt_header_item" category-id={131}>
               일반
             </li>
