@@ -1,7 +1,7 @@
 import React from 'react';
-import Slide from '../main/Slide';
+import Slide from '../main/slide';
 import Notice from '../main/notice';
-import Schedule from '../main/Schedule';
+import Schedule from '../main/schedule';
 import QuickUnderGraduate from '../main/QuickUnderGraduate';
 
 const Home = () => {
