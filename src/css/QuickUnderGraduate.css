@@ -1,0 +1,66 @@
+/* 퀵 링크 영역 */
+#links {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 퀵 링크에 추가한 목록을 가로로 배치 */
+#links ul {
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#links ul li {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#links ul li a span {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    line-height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#links ul li a span.quick-icon {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    line-height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#quick-icon1 {
+    background-image: url('../images/ba-icon.jpg');
+}
+
+#quick-icon2 {
+    background-image: url('../images/cia-icon.jpg');
+}
+
+#quick-icon3 {
+    background-image: url('../images/dpca-icon.jpg');
+}
+
+#quick-icon4 {
+    background-image: url('../images/cla-icon.jpg');
+}
+
+#links ul li a p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+}
