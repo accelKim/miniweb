@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <QuickUnderGraduate />
             {children}
+            <QuickUnderGraduate />
             <Footer />
         </>
     );

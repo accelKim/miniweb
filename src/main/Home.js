@@ -10,10 +10,10 @@ function Home() {
     return (
         <div id="container">
             <Header />
-            <QuickUnderGraduate />
             <Slide />
             <Notice />
             <Schedule />
+            <QuickUnderGraduate />
             <Footer />
         </div>
     );

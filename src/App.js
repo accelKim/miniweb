@@ -2,12 +2,13 @@
 import React from "react";
 import Layout from "./layouts/Layout";
 import QuickUnderGraduate from "./main/QuickUnderGraduate";
+import Home from "./main/Home";
 
 
 function App() {
   return (
     <Layout>
-      <QuickUnderGraduate />
+      <Home />
     </Layout>
 
   );
