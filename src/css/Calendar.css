@@ -1,0 +1,405 @@
+/* container */ 
+@media (min-width: 1240px) { 
+    .container {width: 1240px;margin: 0 auto;}
+}
+@media (max-width: 1239px) and (min-width: 768px) { 
+    .container {width: 100%;box-sizing: border-box;padding-left: 20px;padding-right: 20px;}
+}
+@media (max-width: 767px) {
+    .container {position: relative;width: 100%;box-sizing: border-box;padding-left: 20px;padding-right: 20px;}
+}
+
+
+
+/* 기본 틀 */
+@media (min-width: 1240px) { 
+    #wrapper {font-size: 16px;line-height: 31px;letter-spacing: -0.32px;position: relative;margin-top: 3px;}
+    /*#wrapper::before {*//*    content: "";*//*    position: absolute;*//*    top: 0;*//*    left: 0;*//*    width: 100%;*//*    height: 3px;*//*    background: linear-gradient(to left, #39b8fd, #9f3dff, #f354b1 );*//*}*/
+}
+@media (max-width: 1239px) and (min-width: 768px) { 
+    #wrapper {font-size: 14px;line-height: 24px;letter-spacing: -0.24px;}
+}
+
+@media (max-width: 767px) { 
+    #wrapper {font-size: 14px;line-height: 24px;letter-spacing: -0.24px;}
+}
+@media (min-width: 1240px){
+    .content_count_select{
+        float : right;
+        height: 30px;
+        padding: 0px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        padding-left: 20px;
+        border-radius: 5px;
+        font-family: 'notokr-regular', sans-serif;
+        font-size: 16px;
+        background-color: #ffffff;
+    }
+
+    .content_count_select{
+        width: 160px;
+        background-size: 10px 6px;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+@media (max-width: 1239px) and (min-width: 768px){
+    .content_count_select{
+        float : right;
+        height: 30px;
+        padding: 0px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        padding-left: 20px;
+        border-radius: 5px;
+        font-family: 'notokr-regular', sans-serif;
+        font-size: 14px;
+        background-color: #ffffff;
+    }
+
+    .content_count_select{
+        width: 145px;
+        background-size: 10px 6px;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+@media (max-width: 767px){
+    .content_count_select{
+        float : right;
+        height: 30px;
+        padding: 0px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        padding-left: 20px;
+        border-radius: 5px;
+        font-family: 'notokr-regular', sans-serif;
+        font-size: 14px;
+        background-color: #ffffff;
+    }
+
+    .content_count_select{
+        width: 145px;
+       
+        background-size: 10px 6px;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+
+
+
+/* 연월 선택 */
+.calendar_button_section{ font-size: 0; }
+.type_button {border: none;background: transparent;cursor:pointer;outline: none;font-family: notokr-regular, sans-serif;color: #707070;padding: 0px;box-sizing: border-box;vertical-align: middle;}
+.type_button .btn_pressed{display: none;}
+.type_button img{display: inline-block;vertical-align: middle;}
+
+.type_button:hover .btn_default, .type_button.active .btn_default{display: none;}
+.type_button:hover, .type_button.active{color: #232323;}
+.type_button:hover .btn_pressed, .type_button.active .btn_pressed{display: inline-block;}
+.type_button.monthly {}
+.type_button.active {border: 1px solid #0B9FED; color: #0B9FED;}
+
+@media  (min-width:1240px) {
+    .type_button {font-size: 16px;letter-spacing: -0.32px;line-height: 30px;}
+    .type_button.monthly {border-right: 1px solid #707070;}
+    .type_button.annualy.active {margin-left: -1px;}
+    .type_button img{width: 26px;margin-right: 9px;}
+    .calendar_button_section {display: table;table-layout: fixed;border-collapse: collapse;height: 40px;width: 100%;position: relative;margin-top: 0;text-align: left;}
+    .type_button {display: table-cell;width: 50%;height: 50px;border: 1px solid #e5e5e5;}
+    .type_button:last-child {border-radius : 0px 5px 5px 0px;}
+    .type_button:first-child {border-radius : 5px 0px 0px 5px;}
+}
+
+@media  (min-width:768px) and (max-width:1240px) {
+    .type_button {width: 50%;border: 1px solid #e5e5e5;}
+    .type_button:last-child {border-radius : 0px 5px 5px 0px;}
+    .type_button:first-child {border-radius : 5px 0px 0px 5px;}
+    .type_button.monthly {}
+    /*border-right: 1px solid #707070;*/
+    
+    .calendar_button_section {display: table;table-layout: fixed;border-collapse: collapse;height: 40px;width: 100%;position: relative;margin-top: 0;text-align: left;}
+    .type_button span{font-size: 14px; letter-spacing: -0.28px; line-height: 40px;}
+    .type_button:not(:last-child) {margin-right : 0px;}
+    .type_button img{width: 26px;}
+}
+
+@media  (max-width:767px) {
+    .type_button {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 10px;
+            padding: 0px 30px;
+            line-height: 38px;
+            vertical-align: middle;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+            position: relative;
+            height : 38px !important;
+    }
+    .calendar_button_section{height: 40px;width: 100%;position: absolute;margin-top: -70px;text-align: left;}
+    .type_button span{font-size: 14px; letter-spacing: -0.28px; line-height: 38px;}
+    .type_button:not(:last-child) {}
+    /*margin-right: 20px;*/
+    
+    .type_button img{width: 26px;}
+}
+
+
+/* 캘린더 상단 */
+
+.calendar_top {display: table;width: 100%;}
+.calendar_top > div {display: table-cell;vertical-align:middle;}
+.calendar_controller {cursor: pointer;}
+.calendar_controller img{display: inline-block; margin-bottom: 1px;}
+.calendar_controller{display: inline-block;vertical-align: middle;font-family: notokr-regular, sans-serif;color: #232323;line-height: 1;}
+.calendar_top .calendar_header {text-align: center;}
+.calendar_top .calendar_header h3 {margin: 0px;line-height: 1;font-family: notokr-medium, san-serif;color: #232323;}
+
+@media  (min-width:1240px) {
+    .calendar_top {padding-top: 100px;padding-bottom: 50px;}
+    .calendar_top > div {}
+    .calendar_controller {width: 110px;}
+    .calendar_controller img{width: 7px;}
+    .calendar_controller.prev_year {text-align: left;}
+    .calendar_controller.next_year {text-align: right;}
+    .calendar_controller.prev_year img {margin-right: 18px;}
+    .calendar_controller.next_year img {margin-left: 18px;}
+    .calendar_controller{font-size: 18px;letter-spacing: -0.36px;}
+    .calendar_top .calendar_header {}
+    .calendar_top .calendar_header h3 {font-size: 24px;letter-spacing: -0.48px;}
+}
+
+@media  (min-width:768px) and (max-width:1240px) {
+    .calendar_top {padding-top: 80px;padding-bottom: 26px;}
+    .calendar_top > div {}
+    .calendar_controller {width: 95px;}
+    .calendar_controller img{width: 7px; vertical-align: middle; margin-bottom: 3px;}
+    .calendar_controller.prev_year {text-align: left;}
+    .calendar_controller.next_year {text-align: right;}
+    .calendar_controller.prev_year img {margin-right: 18px;}
+    .calendar_controller.next_year img {margin-left: 18px;}
+    .calendar_controller{font-size: 16px;letter-spacing: -0.32px;}
+    .calendar_top .calendar_header {}
+    .calendar_top .calendar_header h3 {font-size: 20px;letter-spacing: -0.4px;}
+}
+
+@media  (max-width:767px) {
+    
+    .calendar_tab { margin-top: 100px; }
+    
+    .calendar_top {padding-top: 16px;padding-bottom: 26px;}
+    .calendar_top > div {}
+    .calendar_controller {width: 30px;}
+    .calendar_controller img{width: 7px; margin-bottom: -3px;}
+    .calendar_controller.prev_year {text-align: left;}
+    .calendar_controller.next_year {text-align: right;}
+    .calendar_controller {color: transparent;}
+    .calendar_controller span{display: none;}
+    .calendar_top .calendar_header {}
+    .calendar_top .calendar_header h3 {font-size: 20px;letter-spacing: -0.4px;}
+}
+
+/*  중간 구획  */
+
+.calendar_main {border-top: 1px solid #232323;width: 100%;}
+.calendar_body {box-sizing: border-box;background: #f8f8f8;}
+.schedule_detail {box-sizing: border-box; position: relative;}
+
+
+@media  (min-width:1240px) {
+    .calendar_main {display: table;}
+    .calendar_body {display: table-cell;width: 450px;padding: 60px 40px;}
+    .schedule_detail {display: table-cell;width: auto;padding: 60px;}
+}
+
+@media  (min-width:768px) and (max-width:1240px) {
+    .calendar_main {display: table;}
+    .calendar_body {display: table-cell;width: 50%;padding: 40px 20px;}
+    .schedule_detail {display: table-cell;width: 50%;padding: 40px;}
+}
+
+@media  (max-width:767px) {
+    .calendar_main {}
+    .calendar_body {display: block; width: 100%;padding: 40px 20px;}
+    .schedule_detail {display: table-cell;width: 50%;padding: 40px 0px;}
+}
+
+/* 달력내 헤더 */
+.calendar_body_header {position: relative;}
+.calendar_body_header .year_month {display: inline-block;vertical-align: middle;font-family: notokr-medium, san-serif;line-height: 1;}
+.calendar_body_header .set_today {display: inline-block;border: 1px solid #e5e5e5;background: white;font-family: notokr-regular, sans-serif;color: #232323;cursor: pointer;}
+.calendar_body_header .calendar_month_controll {float: right;}
+.calendar_month_controll .month_btn {text-align: center;cursor: pointer;}
+.calendar_month_controll .month_prev {float: left;}
+.calendar_month_controll .month_next {float: right;}
+
+@media  (min-width:1240px) {
+    .calendar_body_header {margin-bottom: 44px;}
+    .calendar_body_header .year_month {font-size: 24px;letter-spacing: -0.48px;line-height: 28px;margin-right: 30px;}
+    .calendar_body_header .set_today {width: 60px;height: 28px;transform: translate(0px, 2px);font-size: 14px;letter-spacing: -0.28px;}
+    .calendar_body_header .calendar_month_controll {width: 70px;}
+    .calendar_month_controll .month_btn {width: 22px;}
+    .calendar_month_controll .month_btn img{width: 7px;margin-top: 7px;}
+}
+
+@media  (min-width:768px) and (max-width:1240px) {
+    .calendar_body_header {margin-bottom: 30px;}
+    .calendar_body_header .year_month {font-size: 20px;letter-spacing: -0.4px;line-height: 28px;margin-right: 20px;}
+    .calendar_body_header .set_today {width: 60px;height: 28px;transform: translate(0px, 2px);font-size: 14px;letter-spacing: -0.28px; line-height: 26px;}
+    .calendar_body_header .calendar_month_controll {width: 70px;}
+    .calendar_month_controll .month_btn {width: 22px;}
+    .calendar_month_controll .month_btn img {width: 7px;margin-top: 7px;}
+}
+
+@media  (max-width:767px) {
+    .calendar_body_header {margin-bottom: 30px;}
+    .calendar_body_header .year_month {font-size: 20px;letter-spacing: -0.4px;line-height: 28px;margin-right: 20px;}
+    .calendar_body_header .set_today {width: 60px;height: 28px;transform: translate(0px, 2px);font-size: 14px;letter-spacing: -0.28px; line-height: 26px;}
+    .calendar_body_header .calendar_month_controll {width: 60px;}
+    .calendar_month_controll .month_btn {width: 24px;}
+    .calendar_month_controll .month_btn img {width: 7px;margin-top: 7px;}
+}
+
+
+/* 달력 요일 */
+.calendar_weekday {width: 100%;display: table;clear: both;font-size: 0px;letter-spacing: 0px;}
+.calendar_weekday li {display: inline-block;vertical-align: middle;text-align: center;font-family: notokr-regular, sans-serif;color: #707070;line-height: 1;box-sizing: border-box;ms-user-select: none;-moz-user-select: -moz-none;-webkit-user-select: none;-khtml-user-select: none;user-select: none;}
+.calendar_weekday li.sunday {color: #fd3832;}
+.calendar_weekday li.saturday {color: #0B9FED;}
+
+
+@media  (min-width: 1240px) {
+    .calendar_weekday {width: 90%;height: 12px;line-height: 1;margin: 0px 0px 20px 0px;}
+    .calendar_weekday li {width: 36px;height: 12px;font-size: 12px;letter-spacing: -0.24px;}
+    .calendar_weekday li:not(:last-child) {margin-right: calc((100% - 253px) / 6); /* 부동소수점 고려 1px 차감된 것으로 계산 */}
+}
+
+@media  (min-width: 768px) and (max-width: 1240px) {
+    .calendar_weekday {width: 90%;height: 12px;line-height: 1;margin: 0px 0px 20px 0px;}
+    .calendar_weekday li {width: 32px;height: 12px;font-size: 10px;letter-spacing: -0.2px;}
+    .calendar_weekday li:not(:last-child) {margin-right: calc((100% - 225px) / 6); /* 부동소수점 고려 1px 차감된 것으로 계산 */}
+}
+
+@media  (max-width: 767px) {
+    .calendar_weekday {width: 90%;height: 12px;line-height: 1;margin: 0px 0px 20px 0px;}
+    .calendar_weekday li {width: 32px;height: 12px;font-size: 10px;letter-spacing: -0.2px;}
+    .calendar_weekday li:not(:last-child) {margin-right: calc((100% - 225px) / 6); /* 부동소수점 고려 */}
+}
+
+/* 달력 일자 */
+
+.calendar_days {font-size: 0px;}
+.daybox{border-radius: 100%;box-sizing: border-box;cursor: pointer;display: inline-block;vertical-align: middle;text-align: center;color: #707070;ms-user-select: none;-moz-user-select: -moz-none;-webkit-user-select: none;-khtml-user-select: none;user-select: none;}
+.daybox.fill{background: #0B9FED;color: white;}
+.daybox:not(.fill).today{box-shadow: 0 0 0 2px #cccccc inset;}
+
+@media  (min-width:1240px) {
+    .calendar_days .daybox {width: 36px;height: 36px;line-height: 36px;font-size: 16px;letter-spacing: -0.32px;margin-bottom: 14px;}
+    .calendar_days .daybox:not(:nth-child(7n)) {margin-right: calc((100% - 253px) / 6); /* 부동소수점 고려 1px 차감된 것으로 계산 */}
+}
+
+@media  (min-width:768px) and (max-width:1240px) {
+    .calendar_days .daybox {width: 32px;height: 32px;line-height: 32px;font-size: 14px;letter-spacing: -0.28px;margin-bottom: 14px;}
+    .calendar_days .daybox:not(:nth-child(7n)) {margin-right: calc((100% - 225px) / 6); /* 부동소수점 고려 1px 차감된 것으로 계산 */}
+}
+
+@media  (max-width:767px) {
+    .calendar_days .daybox {width: 32px;height: 32px;line-height: 32px;font-size: 14px;letter-spacing: -0.28px;margin-bottom: 14px;}
+    .calendar_days .daybox:not(:nth-child(7n)) {margin-right: calc((100% - 225px) / 6); /* 부동소수점 고려 1px 차감된 것으로 계산 */}
+}
+
+
+/* 일정 리스트 */
+
+.schedule_detail_header{line-height: 1;font-family: notokr-medium, sans-serif;color: #707070;font-weight: normal;margin: 0px;}
+.schedule_detail_list {box-sizing: border-box;width: 100%;position: relative;}
+.schedule_detail_list li{display: block;}
+.schedule_detail_list li .date{font-family: notokr-medium, sans-serif;color: #232323;line-height: 1;}
+.schedule_detail_list li .date_title{font-family: notokr-regular, sans-serif;color: #232323;line-height: 1.2;}
+
+@media  (min-width:1240px) {
+    .schedule_detail_header{font-size: 20px;letter-spacing: -0.4px;margin-bottom: 50px;}
+    .schedule_detail_list {padding-left: 50px;}
+    .schedule_detail_list li{display: block;}
+    .schedule_detail_list li .date{font-size: 18px;letter-spacing: -0.36px;}
+    .schedule_detail_list li .date_title{font-size: 16px;letter-spacing: -0.48px;padding: 20px 0px;height: 50px;}
+    .schedule_detail_list li::before{content: " ";width: 11px;height: 11px;border-radius: 100%;background: #0B9FED;display: block;position: absolute;left: 0px;transform: translate(0px, 8px);z-index: 1;}
+    .schedule_detail_list li:not(:last-child)::after{content: " ";width: 1px;height: 110px;background: #e5e5e5;display: block;position: absolute;left: 5px;margin-top: -100px;z-index: 0;}
+}
+
+@media  (min-width:768px) and (max-width:1240px) {
+    .schedule_detail_header{font-size: 16px;letter-spacing: -0.32px;margin-bottom: 30px;}
+    .schedule_detail_list {padding-left: 40px;}
+    .schedule_detail_list li{display: block;}
+    .schedule_detail_list li .date{font-size: 16px;letter-spacing: -0.32px;}
+    .schedule_detail_list li .date_title{font-size: 14px;letter-spacing: -0.28px;padding: 15px 0px;height: 40px;}
+    .schedule_detail_list li::before{content: " ";width: 9px;height: 9px;border-radius: 100%;background: #0B9FED;display: block;position: absolute;left: 0px;transform: translate(0px, 4px);z-index: 1;}
+    .schedule_detail_list li:not(:last-child)::after{content: " ";width: 1px;height: 90px;background: #e5e5e5;display: block;position: absolute;left: 5px;margin-top: -80px;z-index: 0;}
+}
+
+@media  (max-width:767px) {
+    .schedule_detail_header{font-size: 16px;letter-spacing: -0.32px;margin-bottom: 30px;}
+    .schedule_detail_list {padding-left: 40px;}
+    .schedule_detail_list li{display: block;}
+    .schedule_detail_list li .date{font-size: 16px;letter-spacing: -0.32px;}
+    .schedule_detail_list li .date_title{font-size: 14px;letter-spacing: -0.28px;padding: 15px 0px;height: 40px;}
+    .schedule_detail_list li::before{content: " ";width: 9px;height: 9px;border-radius: 100%;background: #0B9FED;display: block;position: absolute;left: 0px;transform: translate(0px, 4px);z-index: 1;}
+    .schedule_detail_list li:not(:last-child)::after{content: " ";width: 1px;height: 90px;background: #e5e5e5;display: block;position: absolute;left: 4px;margin-top: -80px;z-index: 0;}
+}
+
+/* 연간 학사일정 */
+
+.annual_page {
+    border-top: none;
+    margin-top: 0px;
+}
+
+.annual_page .info_table {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    border-collapse: collapse;
+}
+
+.annual_page .info_table tr th {
+    background-color: #f8f8f8;
+    font-family: notokr-medium, sans-serif;
+    font-weight: normal;
+    color: #232323;
+}
+
+.annual_page .info_table tr td {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+@media  (min-width:1240px) {
+    .annual_page .info_table tr th{
+        width: 50%;
+        height: 60px;
+        border-bottom: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+    }
+}
+
+@media  (min-width:768px) and (max-width:1240px) {
+    .annual_page .info_table tr th{
+        width: 50%;
+        height: 50px;
+    }
+}
+
+@media  (max-width:767px) {
+    .annual_page .info_table tr th{
+        width: 50%;
+        height: 50px;
+    }
+}

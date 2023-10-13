@@ -1,29 +1,65 @@
 import React from "react";
-import { Navbar, Nav, Button, Container } from "react-bootstrap";
+import '../css/Header.css';
 
-const Header = () => {
-  return (
-    <header>
-      <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">오리대학교 Ori University</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#intro">학교소개</Nav.Link>
-            <Nav.Link href="#undergraduate_major">학부전공</Nav.Link>
-            <Nav.Link href="#academic_info">학사정보</Nav.Link>
-            <Nav.Link href="#class_grade">수업•성적</Nav.Link>
-            <Nav.Link href="#university life">대학생활</Nav.Link>
-            <Nav.Link href="#enrolment">수강신청</Nav.Link>
-          </Nav>
-          <Nav className="ms-auto">
-            <Nav.Link href="#login">
-              <Button variant="secondary">Log In</Button>
-            </Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </header>
-  );
+function Header() {
+
+    
+    return (
+        <header>
+            <div id="menuBar">
+                <div id="logo" className="logo-container">
+                    <a href="index.html">
+                        <img src="logo.png" alt="오리대학교 로고" className="logo" />
+                    </a>
+                </div>
+                <nav>
+                    <ul id="topMenu">
+                        <li><a href="#">학교소개</a>
+                            <ul>
+                                <li><a href="#">학교 위치</a></li>
+                                <li><a href="#">기구체계도</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학부전공</a>
+                            <ul>
+                                <li><a href="#">미술예술학부</a></li>
+                                <li><a href="#">융합예술학부</a></li>
+                                <li><a href="#">디저트조리학부</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학사정보</a>
+                            <ul>
+                                <li><a href="#">학사 일정</a></li>
+                                {/* <li><a href="#">서식 자료실</a></li> */}
+                            </ul>
+                        </li>
+
+                        <li><a href="#">수업 • 성적</a>
+                            <ul>
+                                <li><a href="#">수업 관련</a></li>
+                                <li><a href="#">성적 관련</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">대학생활</a>
+                            <ul>
+                                <li><a href="#">게시판</a></li>
+                                {/* <li><a href="#">학점계산기</a></li> */}
+                            </ul>
+                        </li>
+                        <li><a href="#">수강신청</a>
+                            <ul>
+                                <li><a href="#">장바구니</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="kakaoLoginButton">
+                    <button id="kakaoLogin">Login</button>
+                </div>
+            </div>
+        </header>
+    );
 };
 
 export default Header;
