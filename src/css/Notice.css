@@ -1,0 +1,77 @@
+  /* 공지사항 + 행사안내 : 전체 레이아웃*/
+  @media (min-width: 1240px){
+    #notice{padding: 50px 0 50px 0; position: relative; overflow: hidden;}
+    #festival { padding: 50px 0 100px 0; position: relative; overflow: hidden; }
+}
+@media (max-width: 1240px) and (min-width: 768px){
+    #notice{margin: 40px 0 80px 0;}
+    #festival { margin: 80px 0 80px 0; }
+}
+@media (max-width: 767px){
+    #notice{margin: 30px 0 60px 0;}
+    #festival { margin: 60px 0 60px 0; }
+}
+/* 공지사항 : 해더 */
+.notice_section .nt_header .nt_header_top{position: relative;}
+.notice_section .nt_header .nt_header_top .nt_header_title{font-family: 'notokr-bold', Sans-Serif;text-align: center;}
+.notice_section .nt_header .nt_header_top .nt_header_more{color: #707070;position: absolute;top: 50%;right: 0;-webkit-transform: translate( 0, -50%);-ms-transform: translate( 0, -50%);transform: translate( 0, -50%);cursor: pointer;background-repeat: no-repeat;background-size: contain;background-position: right;}
+
+.notice_section .nt_header .nt_header_bottom{width: 100%;text-align: center;}
+.notice_section .nt_header .nt_header_bottom .nt_header_category{font-size: 0;}
+.notice_section .nt_header .nt_header_bottom .nt_header_item{font-family: 'notokr-medium', Sans-Serif;color: #cccccc;display: inline-block;cursor: pointer;position: relative;}
+.notice_section .nt_header .nt_header_bottom .nt_header_item:hover, .notice_section .nt_header .nt_header_bottom .nt_header_item.active {color: #232323;}
+.notice_section .nt_header .nt_header_bottom .nt_header_item:hover::before, .notice_section .nt_header .nt_header_bottom .nt_header_item.active::before {content: "";position: absolute;bottom: -5px;left: 50%;transform: translate(-50%, 0);height: 10px;width: 100%;z-index: -999;padding: 0 5px;background: -webkit-gradient(linear, left top, right top, from(#87CEEB), to(#1A66B2));background: -o-linear-gradient(left, #87CEEB, #1A66B2);background: linear-gradient(90deg, #87CEEB, #1A66B2);opacity: 0.5;}
+@media (min-width: 1240px){
+   
+    /*#festival .bg_svg{ transform: rotate(-180deg); background: url(/res/service/img/index/main/main_square.svg) no-repeat;width: 620px;height: 620px;position: absolute;bottom: -170px;left:-120px;}*/
+    .notice_section .nt_header{margin-bottom: 35px;}
+    .notice_section .nt_header .nt_header_top{margin-bottom: 40px;}
+    .notice_section .nt_header .nt_header_top .nt_header_title{font-size: 36px;line-height: 36px;}
+    
+    .notice_section .nt_header .nt_header_bottom .nt_header_category{height: 18px;}
+    .notice_section .nt_header .nt_header_bottom .nt_header_item{margin: 0 25px;font-size: 18px;line-height: 18px;}
+}
+@media (max-width: 1240px) and (min-width: 768px){
+    .notice_section .nt_header{margin-bottom: 25px;}
+    .notice_section .nt_header .nt_header_top{margin-bottom: 30px;}
+    .notice_section .nt_header .nt_header_top .nt_header_title{font-size: 30px;line-height: 30px;}
+    .notice_section .nt_header .nt_header_top .nt_header_more{font-size: 14px;line-height: 16px;padding-right: 24px;}
+    .notice_section .nt_header .nt_header_bottom .nt_header_category{height: 16px;}
+    .notice_section .nt_header .nt_header_bottom .nt_header_item{margin: 0 20px;font-size: 16px;line-height: 16px;}
+}
+@media (max-width: 767px){
+    .notice_section .nt_header{margin-bottom: 25px;}
+    .notice_section .nt_header .nt_header_top{margin-bottom: 30px;}
+    .notice_section .nt_header .nt_header_top .nt_header_title{font-size: 24px;line-height: 24px;}
+    .notice_section .nt_header .nt_header_top .nt_header_more{font-size: 14px;line-height: 16px;padding-right: 24px;}
+    .notice_section .nt_header .nt_header_bottom .nt_header_category{height: 16px;}
+    .notice_section .nt_header .nt_header_bottom .nt_header_item{margin: 0 15px;font-size: 16px;line-height: 16px;}
+}
+
+/* 공지사항 : 타이틀 리스트*/
+.notice_section .nt_item_wrapper{width: 100%;}
+.notice_section .nt_item_wrapper .nt_list{width: 100%;font-size: 0;}
+.notice_section .nt_item_wrapper .nt_list .nt_item{border-bottom: 1px solid #e5e5e5;position: relative;-o-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;vertical-align: top;cursor: pointer;}
+.notice_section .nt_item_wrapper .nt_list .nt_item:hover{color: #0B9FED;}
+@media (min-width: 1240px){
+
+    .notice_section .nt_item_wrapper .nt_list {min-height: 213px;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item{width: calc( 50% - 30px );display: inline-block;font-size: 18px;line-height: 70px;-webkit-box-sizing: border-box;box-sizing: border-box;font-family: 'notokr-medium', Sans-Serif;padding-right: 100px;margin-right: 60px;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item:nth-child(2n){margin-right: 0;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item span{position: absolute;right: 0;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item:hover::before{content:"";position: absolute;right: 0;top: 50%;-webkit-transform: translate( 0, -50%);-ms-transform: translate( 0, -50%);transform: translate( 0, -50%);width: 20px;height: 20px;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item:hover span{display: none;}
+}
+@media (max-width: 1240px) and (min-width: 768px){
+
+    .notice_section .nt_item_wrapper .nt_list {min-height: 153px;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item{width: calc( 50% - 20px );display: inline-block;font-size: 14px;line-height: 50px;-webkit-box-sizing: border-box;box-sizing: border-box;font-family: 'notokr-medium', Sans-Serif;margin-right: 40px;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item:nth-child(2n){margin-right: 0;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item span{display: none;}
+}
+@media (max-width: 767px){
+    .notice_section .nt_item_wrapper .nt_list {min-height: 204px;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item{width: 100%;font-size: 14px;line-height: 50px;-webkit-box-sizing: border-box;box-sizing: border-box;font-family: 'notokr-medium', Sans-Serif;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item:nth-child(n+5){display: none;}
+    .notice_section .nt_item_wrapper .nt_list .nt_item span{display: none;}
+}
