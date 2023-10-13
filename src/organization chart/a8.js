@@ -1,7 +1,7 @@
 
 import { Tree, TreeNode } from 'react-organizational-chart';
 import styled from "styled-components";
-import "./tree.css"
+import "..css//tree.css"
 import {React, useState} from "react";
 
 
