@@ -1,0 +1,83 @@
+.top_box {
+    background-color: #f8f8f8;
+    position: relative;
+    word-break: keep-all;
+}
+
+@media (min-width: 1240px) {
+    .top_box {
+        padding: 20px 40px;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-top: 130px;
+        padding-bottom: 32px;
+    }
+}
+
+/* 학과 영문명 */
+@media (min-width: 1240px) {
+    .top_box p {
+        position: absolute;
+        top: 35px;
+        line-height: 26px;
+    }
+
+    .top_box p {
+        color: #707070;
+        opacity: 50%;
+    }
+}
+
+/* 학부와 학부설명 */
+@media (min-width: 1240px) {
+    .top_box_text {
+        line-height: 31px;
+        color: #707070;
+        margin-left: 280px;
+        letter-spacing: -0.32px;
+    }
+}
+
+/* 학부명 */
+@media (min-width: 1240px) {
+    .top_box_title {
+        font-size: 28px;
+        line-height: 43px;
+        position: absolute;
+    }
+}
+
+.top_box_title {
+    font-family: 'notokr-bold';
+    color: #343434;
+}
+
+div {
+    display: block;
+}
+
+@media (min-width: 1240px) {
+    .bottom_box {
+        margin-top: 10px;
+        padding: 32px 40px;
+        border: 1px solid #e5e5e5;
+        background-position: 95% bottom;
+        background-size: auto 78%;
+    }
+    .bottom_box {
+        background-repeat: no-repeat;
+        word-break: keep-all;
+    }
+}
+
+@media (min-width: 1240px) {
+    .department_title {
+        margin-bottom: 40px;
+    }
+}
+
+.bottom_box_text {
+    color: #707070;
+}

@@ -12,21 +12,38 @@ import Footer from "./layouts/Footer";
 
 
 
+=======
+// 라우팅
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./layouts/Header";
+import Home from "./layouts/Home";
+// 학교소개 - 학교위치
+import Location from "./univ_intro/Location";
+// 학교소개 - 기구체계도
+import A8 from "./org_chart/a8";
+// 학부학과
+import DeptIntro from "./major/DeptIntro";
+import Footer from "./layouts/Footer";
 
+// index.js에 의해서 App이 불러와짐
+// 여기에는 기본특만 놔두시면 됩니다.(메인은 Home에 모아져 있음)
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-      
-      <Routes>
-        <Route path="/" element={<PostList />} />
-        <Route path="/posts/:id" element={<PostDetail />} />
-        <Route path="/posts/:id/edit" element={<PostEdit />} />
-        <Route path="/create" element={<PostCreate />} />
-      </Routes>
-  
-    </BrowserRouter>
-  </div>
+
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/orgChart" element={<A8 />} />
+          <Route path="/ba" element={<DeptIntro />} />
+        </Routes>
+      <Footer />
+      </BrowserRouter>
+    </div>
+
   );
 }
 

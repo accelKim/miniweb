@@ -1,0 +1,31 @@
+@media (min-width: 1240px) {
+    .bottom_box {
+        margin-top: 10px;
+        padding: 32px 40px;
+        border: 1px solid #e5e5e5;
+        background-position: 95% bottom;
+        background-size: auto 78%;
+        background-color: #f8f8f8;
+        color: darkslategray;
+    }
+}
+
+.bottom_box {
+    background-repeat: no-repeat;
+    word-break: keep-all;
+}
+
+div {
+    display: block;
+}
+
+@media (min-width: 1240px) {
+    .department_title {
+        margin-bottom: 40px;
+    }
+}
+
+.bottom_box_text {
+    color: darkslategray;
+}
+
