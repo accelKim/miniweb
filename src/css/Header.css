@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Merienda:wght@700&family=Nanum+Gothic:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Merienda:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -50,14 +49,14 @@ ul {
 }
 
 #menuBar {
-    background-color: #1A66B2;
+    background-color: #1a66b2;
     padding: 10px;
     position: relative; /* 상대 위치로 변경 */
     z-index: 2; /* 다른 요소 위에 나타나도록 설정 */
 }
 
 #menuButton:hover {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.632);
 }
 
 header {
@@ -80,7 +79,7 @@ header {
 }
 
 #logo h1 {
-    font-family: 'Nanum Gothic', cursive;
+    font-family: 'Noto Sans Korean', cursive;
     font-weight: 700;
     font-size: 40px;
     color: #fff;
@@ -160,33 +159,94 @@ nav {
 }
 
 /* 반응형 스타일 */
-@media (max-width: 1024px) {
 
+/* 1024px일때 */
+@media (max-width: 1024px) { /* 수정된 미디어 쿼리 */
     #topMenu {
-        flex-direction: column; /* 작은 화면에서 세로 배치 */
-        margin-top: 50px; /* 메뉴 항목 간 간격 설정 */
+        flex-direction: column;
+        margin-top: 50px;
+        display: block; /* 작은 화면에서 메뉴를 세로로 표시합니다. */
+        position: static; /* 고정 위치 제거 */
     }
 
     #topMenu>li {
-        margin: 5px 0; /* 간격 조절 */
+        margin: 5px 0;
     }
 
     #topMenu>li>a {
-        padding: 10px; /* 패딩 감소 */
+        padding: 10px;
     }
 
     #menuBar {
         background-color: #1A66B2;
         padding: 10px;
-        position: fixed; /* 상단 메뉴바를 화면 상단에 고정 */
-        top: 0; /* 상단에 위치하도록 설정 */
-        left: 0; /* 좌측에 위치하도록 설정 */
-        right: 0; /* 우측에 위치하도록 설정 */
-        z-index: 2; /* 다른 요소 위에 표시되도록 설정 */
+        position: relative; /* 고정 위치 제거 */
     }
 
     #topMenu>li>ul {
-        position: static; /* 기본 위치로 변경 */
-        width: 100%; /* 폭을 가득 채움 */
+        position: static;
+        width: 100%;
+        display: none; /* 기본적으로 하위 메뉴를 숨깁니다. */
+    }
+
+    #topMenu>li:hover>ul {
+        display: none; /* 하위 메뉴를 처음에는 숨기도록 이 부분을 'none'으로 변경합니다. */
+    }
+
+    /* 하위 메뉴를 토글할 버튼을 추가합니다. */
+    #menuToggleButton {
+        display: block;
+        background-color: #1A66B2;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
+/* 768px일때 */
+@media (max-width: 768px) {
+    #topMenu {
+        flex-direction: column;
+        margin-top: 50px;
+        display: block; /* 작은 화면에서 메뉴를 세로로 표시합니다. */
+        position: static; /* 고정 위치 제거 */
+    }
+
+    #topMenu>li {
+        margin: 5px 0;
+    }
+
+    #topMenu>li>a {
+        padding: 10px;
+    }
+
+    #menuBar {
+        background-color: #1A66B2;
+        padding: 10px;
+        position: relative; /* 고정 위치 제거 */
+        height: calc(100px + 50px); /* 높이를 100px + 50px로 늘립니다. */
+    }
+
+    #topMenu>li>ul {
+        position: static;
+        width: 100%;
+        display: none; /* 기본적으로 하위 메뉴를 숨깁니다. */
+    }
+
+    #topMenu>li:hover>ul {
+        display: none; /* 하위 메뉴를 처음에는 숨기도록 이 부분을 'none'으로 변경합니다. */
+    }
+
+    /* 하위 메뉴를 토글할 버튼을 추가합니다. */
+    #menuToggleButton {
+        display: block;
+        background-color: #1A66B2;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
     }
 }

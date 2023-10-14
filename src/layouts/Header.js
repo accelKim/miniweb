@@ -14,7 +14,7 @@ function Header() {
                             </Link>
                         </div>
                         <ul id="topMenu">
-                            <li><Link to="/">학교소개</Link>
+                            <li><a href="#">학교소개</a>
                                 <ul>
                                     <li><Link to="/location">학교 위치</Link></li>
                                     <li><Link to="/orgChart">기구체계도</Link></li>
@@ -22,9 +22,10 @@ function Header() {
                             </li>
                             <li><a href="#">학부전공</a>
                                 <ul>
-                                    <li><a href="#">미술예술학부</a></li>
-                                    <li><a href="#">융합예술학부</a></li>
-                                    <li><a href="#">디저트조리학부</a></li>
+                                    <li><a href="/ba">미술예술학부</a></li>
+                                    <li><a href="/cia">융합예술학부</a></li>
+                                    <li><a href="/dpca">디저트조리학부</a></li>
+                                    <li><a href="/cla">교양</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">학사정보</a>

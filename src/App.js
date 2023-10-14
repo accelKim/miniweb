@@ -4,8 +4,12 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./layouts/Header";
 import Home from "./layouts/Home";
+// 학교소개 - 학교위치
 import Location from "./univ_intro/Location";
-
+// 학교소개 - 기구체계도
+import A8 from "./org_chart/a8";
+// 학부학과
+import DeptIntro from "./major/DeptIntro";
 import Footer from "./layouts/Footer";
 
 // index.js에 의해서 App이 불러와짐
@@ -16,8 +20,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/location" element={<Location />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/orgChart" element={<A8 />} />
+          <Route path="/ba" element={<DeptIntro />} />
         </Routes>
       <Footer />
       </BrowserRouter>
