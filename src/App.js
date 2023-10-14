@@ -9,8 +9,7 @@ import Location from "./univ_intro/Location";
 // 학교소개 - 기구체계도
 import A8 from "./org_chart/a8";
 // 학부학과
-import Major from "./major/Major";
-
+import DeptIntro from "./major/DeptIntro";
 import Footer from "./layouts/Footer";
 
 // index.js에 의해서 App이 불러와짐
@@ -25,7 +24,7 @@ function App() {
           <Route path="/location" element={<Location />} />
           <Route path="/location" element={<Location />} />
           <Route path="/orgChart" element={<A8 />} />
-          <Route path="/ba" element={<Major />} />
+          <Route path="/ba" element={<DeptIntro />} />
         </Routes>
       <Footer />
       </BrowserRouter>

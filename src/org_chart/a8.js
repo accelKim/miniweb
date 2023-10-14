@@ -89,9 +89,9 @@ function A8() {
               미용예술학부🔽
               {isOpen[5] && (
                 <TreeNode label={<StyledNode>
-                  ·미용전공<br></br>
-                  ·메이크업전공<br></br>
-                  ·뷰티네일전공
+                  미용전공<br></br>
+                  메이크업전공<br></br>
+                  뷰티네일전공
                 </StyledNode>}></TreeNode>
               )}
             </StyledNode>}>
