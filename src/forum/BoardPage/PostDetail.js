@@ -26,16 +26,51 @@ function PostDetail() {
         console.error('Error deleting post:', error);
       });
   };
+  
 
   return (
     <div>
-      <h1>게시글 상세 정보</h1>
-      <h2>{post.title}</h2>
-      <p>{post.content}</p>
-      <button onClick={handleDelete}>삭제</button>
-      <Link to={`/posts/${id}/edit`}>수정</Link>
+      <h1>QnA</h1>
+      <hr style={hrStyle} /><br />
+      <h2 style={titleStyle}>{post.title}</h2>
+      <hr style={hrStyle} /><br />
+      <p style={contentStyle}>{post.content}</p>
+      <hr style={hrStyle} /><br />
+      <button onClick={handleDelete} style={buttonStyle}>삭제</button>
+      <Link to={`/posts/${id}/edit`} style={buttonStyle2}>수정</Link>
     </div>
   );
+}
+
+const buttonStyle = {
+  display: 'inline-block',
+  padding: '10px 20px',
+  backgroundColor: 'red',
+  color: 'white',
+  textDecoration: 'none',
+  borderRadius: '5px',
+  margin: '10px',
+};
+const buttonStyle2 = {
+  display: 'inline-block',
+  padding: '10px 20px',
+  backgroundColor: 'skyblue',
+  color: 'white',
+  textDecoration: 'none',
+  borderRadius: '5px',
+  margin: '10px',
+  position:'relative',
+  left:'600px',
+};
+const titleStyle ={ 
+
+}
+const hrStyle = {
+  width: '800px',
+}
+const contentStyle ={ 
+  margin: "300px",
+  
 }
 
 export default PostDetail;

@@ -21,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<PostList />} />
         <Route path="/posts/:id" element={<PostDetail />} />
-        <Route path="/create" element={<PostCreate />} />
         <Route path="/posts/:id/edit" element={<PostEdit />} />
+        <Route path="/create" element={<PostCreate />} />
       </Routes>
   
     </BrowserRouter>
