@@ -2,15 +2,6 @@
 import React from "react";
 import Layout from "./layouts/Layout";
 import  ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter} from 'react-router-dom';
-import PostDetail from './forum/BoardPage/PostDetail';
-import PostEdit from './forum/BoardPage/PostEdit';
-import PostCreate from './forum/BoardPage/PostCreate';
-import PostList from './forum/BoardPage/PostList';
-import Header from "./layouts/Header";
-import Footer from "./layouts/Footer";
-
-
 // 라우팅
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./layouts/Header";
