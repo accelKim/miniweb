@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../univ_intro/location.css';
+import '../css/Location.css';
 import Kakaomap from "./Kakaomap";
 
 function Location() {
@@ -14,7 +14,7 @@ function Location() {
                             <li className="depth2_item" menu-id="590">
                                 <div className="depth2_wrapper">
                                     <div className="depth2_wrapper_bg"></div>
-                                    <Link to="/univ_location">
+                                    <Link to="/location">
                                         <span>학교 위치</span>
                                     </Link>
                                 </div>

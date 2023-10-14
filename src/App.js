@@ -23,9 +23,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/univ_location" element={<Location />} />
+          <Route path="/location" element={<Location />} />
           <Route path="/orgChart" element={<A8 />} />
-          <Route path="/major" element={<Major />} />
+          <Route path="/ba" element={<Major />} />
         </Routes>
       <Footer />
       </BrowserRouter>
