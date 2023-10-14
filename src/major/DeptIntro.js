@@ -9,7 +9,7 @@ function DeptIntro() {
     return (
         <div className="department_introduce">
             <SideMenubar
-                title="미용예술학부"
+                title="조직도"
                 subtitle="학부소개"
                 link1="/dept_intro"
                 subtitle2="미용학과"

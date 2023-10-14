@@ -1,5 +1,7 @@
 // 최근 버전일경우 작성해주지 않아도 되지만 구버전에서 돌릴 경우를 생각해서 import
 import React from "react";
+import Layout from "./layouts/Layout";
+import  ReactDOM from 'react-dom/client';
 // 라우팅
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./layouts/Header";
@@ -7,7 +9,7 @@ import Home from "./layouts/Home";
 // 학교소개 - 학교위치
 import Location from "./univ_intro/Location";
 // 학교소개 - 기구체계도
-import A8 from "./org_chart/a8";
+import Org from "./org_chart/A";
 // 학부학과
 import DeptIntro from "./major/DeptIntro";
 import Footer from "./layouts/Footer";
@@ -17,18 +19,20 @@ import Footer from "./layouts/Footer";
 function App() {
   return (
     <div className="App">
+
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/location" element={<Location />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/orgChart" element={<A8 />} />
+          <Route path="/orgChart" element={<Org />} />
           <Route path="/ba" element={<DeptIntro />} />
         </Routes>
       <Footer />
       </BrowserRouter>
     </div>
+
   );
 }
 
