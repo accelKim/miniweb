@@ -16,6 +16,9 @@ const StyledNode = styled.div`
   
 `
 ;
+const TreeStyle ={
+  
+}
 
 
 
@@ -34,6 +37,7 @@ function A8 () {
     };
   return(
   <Tree
+    style={TreeStyle}
     lineWidth={'2px'}
     lineColor={'skyblue'}
     lineBorderRadius={'10px'}
