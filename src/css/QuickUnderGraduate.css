@@ -65,3 +65,17 @@
     font-weight: 600;
     color: #666;
 }
+
+/* 화면 너비가 768px 미만일 때 */
+@media (max-width: 768px) {
+    #links ul li {
+        width: 50%;
+    }
+}
+
+/* 화면 너비가 480px 미만일 때 */
+@media (max-width: 480px) {
+    #links ul li {
+        width: 100%;
+    }
+}

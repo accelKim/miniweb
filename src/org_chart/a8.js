@@ -1,6 +1,6 @@
 import { Tree, TreeNode } from 'react-organizational-chart';
 import styled from "styled-components";
-import "../css/Tree.css";
+import "../css/tree.css";
 import { React, useState } from "react";
 
 const StyledNode = styled.div`
@@ -8,10 +8,12 @@ const StyledNode = styled.div`
   display: inline-block;
   border: 2px solid blue;
   border-radius: 8px;
-  color: black;
-  
+  color: black;  
 `
   ;
+  const TreeStyle = {
+   color: 'white',
+  }
 
 function A8() {
   // 상태 변수를 초기값으로 닫힌 상태를 가지도록 설정
@@ -28,7 +30,7 @@ function A8() {
       lineWidth={'2px'}
       lineColor={'skyblue'}
       lineBorderRadius={'10px'}
-      label={<StyledNode className='main' style={{ color: 'white' }}>총장</StyledNode>}>
+      label={<StyledNode className='main' style={TreeStyle}>총장</StyledNode>}>
 
       <TreeNode label={<StyledNode>총괄부총장</StyledNode>}>
         <TreeNode label={<StyledNode>정화건학이념아카데미</StyledNode>}></TreeNode>
