@@ -9,7 +9,7 @@ import Home from "./layouts/Home";
 // 학교소개 - 학교위치
 import Location from "./univ_intro/Location";
 // 학교소개 - 기구체계도
-import A8 from "./org_chart/a8";
+import Org from "./org_chart/A";
 // 학부학과
 import DeptIntro from "./major/DeptIntro";
 import Footer from "./layouts/Footer";
@@ -26,7 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/location" element={<Location />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/orgChart" element={<A8 />} />
+          <Route path="/orgChart" element={<Org />} />
           <Route path="/ba" element={<DeptIntro />} />
         </Routes>
       <Footer />
