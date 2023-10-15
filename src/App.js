@@ -30,7 +30,6 @@ import GradeNotice from "./class_grade/gradeNotice";
 function App() {
   return (
     <div className="App">
-
       <BrowserRouter>
         <Header />
         <Routes>
@@ -46,7 +45,6 @@ function App() {
           <Route path="/class" element={<Class_Grade />} />
           <Route path="/grade" element={<GradeNotice />} />
           <Route path="/dept_intro" element={<DeptIntro />} />
-
         </Routes>
       <Footer />
       </BrowserRouter>
