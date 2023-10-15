@@ -1,11 +1,14 @@
 import React from "react";
 import '../css/Location.css';
 import SideMenubar from "../layouts/SideMenubar";
+import CosmetologyMajor from "./CosmetologyMajor";
+import CosmetologyEdGoals from "./CosmetologyEdGoals";
+import CosmetologyCareer from "./CosmetologyCareer";
 
 function Cosmetology() {
-    return(
+    return (
         <div className="cosmetology_department">
-            <SideMenubar 
+            <SideMenubar
                 title="미용예술학부"
                 subtitle="학부소개"
                 link1="/ba"
@@ -14,7 +17,7 @@ function Cosmetology() {
                 link3="/makeup_artistry_department"
                 subtitle3="메이크업학과"
                 contentTitle="미용전공"
-                content="여기는 내용을 입력해주세요"
+                content={<div><CosmetologyMajor /> <CosmetologyEdGoals /> <CosmetologyCareer /></div>}
             />
         </div>
     );
