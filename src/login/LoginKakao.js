@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-const LoginKakao = ({  }) => {
+const LoginKakao = () => {
     const [isLogged, setIsLogged] = useState(false);
+    const [profileNickname, setProfileNickname] = useState(null);
 
     useEffect(() => {
         // KAKAO 로그인
@@ -26,7 +27,9 @@ const LoginKakao = ({  }) => {
                         url: '/v2/user/me',
                         success: res => {
                             const kakao_account = res.kakao_account;
-                            console.log(kakao_account);
+                            const nickname = kakao_account.profile.nickname;
+                            console.log(nickname);
+                            setProfileNickname(nickname);
                             setIsLogged(true);
                         }
                     });
@@ -38,10 +41,8 @@ const LoginKakao = ({  }) => {
     return (
         <div>
             {isLogged ? (
-                // 로그인 성공 시 버튼 텍스트 변경
-                <button>로그인되었습니다.</button>
+                <button>{profileNickname}님이 로그인 하셨습니다.</button>
             ) : (
-                // 로그인 버튼
                 <a onClick={kakaoLogin}>
                     <button>로그인</button>
                 </a>
