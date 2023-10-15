@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Enrollment() {
-  const [courseList, setCourseList] = useState([
-    { id: 1, name: '미용의정석', instructor: '김선생님' ,time: '수요일 3~6교시', place:'제1 강의실', total:'30'  },
-    { id: 2, name: '융합예술의 정석', instructor: '이선생님',  time: '수요일 3~6교시', place:'제1 강의실', total:'20'},
-  ]);
+
+  // 데이터를 가져와서 courseList 상태에 저장
+  useEffect(() => {
+    fetch('http://localhost:3000/courses')
+      .then((response) => response.json())
+      .then((data) => {
+        setCourseList(data);
+      })
+      .catch((error) => {
+        console.error('데이터를 가져오는 중 오류 발생:', error);
+      });
+  }, []); // useEffect를 한 번만 실행
 
   const [cart, setCart] = useState([]);
-  const [userId, setUserId] = useState('user456'); // 사용자 아이디
+  const [courseList, setCourseList] = useState([]);
+  const [userId, setUserId] = useState('userABC'); // 사용자 아이디
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
@@ -37,11 +46,16 @@ function Enrollment() {
       .then((response) => response.json())
       .then((data) => {
         console.log('장바구니 목록 서버에 저장됨:', data);
+        setModalContent('등록을 완료하였습니다.'); // 성공 메시지
+        setShowModal(true);
       })
       .catch((error) => {
         console.error('장바구니 목록 서버 저장 중 오류 발생:', error);
+        setModalContent('등록에 실패하였습니다.'); // 오류 메시지
+        setShowModal(true);
       });
   };
+
   const removeFromCart = (course) => {
     const updatedCart = cart.filter((item) => item.id !== course.id);
     setCart(updatedCart);

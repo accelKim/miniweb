@@ -80,6 +80,68 @@
         }
       ],
       "id": 2
+    },
+    {
+      "userId": "user789",
+      "cart": [
+        {
+          "id": 1,
+          "name": "미용의정석",
+          "instructor": "김선생님",
+          "time": "수요일 3~6교시",
+          "place": "제1 강의실",
+          "total": "30"
+        },
+        {
+          "id": 2,
+          "name": "융합예술의 정석",
+          "instructor": "이선생님",
+          "time": "수요일 3~6교시",
+          "place": "제1 강의실",
+          "total": "20"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": "userABC",
+      "cart": [
+        {
+          "id": 1,
+          "name": "미용의정석",
+          "instructor": "김선생님",
+          "time": "수요일 3~6교시",
+          "place": "제1 강의실",
+          "total": "30"
+        },
+        {
+          "id": 2,
+          "name": "융합예술의 정석",
+          "instructor": "이선생님",
+          "time": "수요일 3~6교시",
+          "place": "제1 강의실",
+          "total": "20"
+        }
+      ],
+      "id": 4
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "미용의정석",
+      "instructor": "김선생님",
+      "time": "수요일 3~6교시",
+      "place": "제1 강의실",
+      "total": "30"
+    },
+    {
+      "id": 2,
+      "name": "융합예술의 정석",
+      "instructor": "이선생님",
+      "time": "수요일 3~6교시",
+      "place": "제1 강의실",
+      "total": "20"
     }
   ]
 }
