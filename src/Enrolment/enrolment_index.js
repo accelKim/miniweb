@@ -12,6 +12,7 @@ function Enolment_Index() {
                 link1="/enolment"
                 contentTitle="수강신청"
                 content={<div><Enollment /></div>}
+                
             />
         </div>
     );

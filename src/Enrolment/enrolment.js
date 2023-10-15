@@ -168,6 +168,7 @@ const buttonStyle = {
   }
   const modal_Content = {
     marginBottom :'16px',
+    
   }
 
 
