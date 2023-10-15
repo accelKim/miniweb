@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Merienda:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300&display=swap');
-.top_box {
+.major_wrapper {
     background-color: #f8f8f8;
     position: relative;
     word-break: keep-all;
 }
 
 @media (min-width: 1240px) {
-    .top_box {
+    .major_wrapper {
         padding: 20px 40px;
         padding-top: 20px;
         padding-right: 40px;
@@ -19,13 +19,13 @@
 
 /* 학과 영문명 */
 @media (min-width: 1240px) {
-    .top_box p {
+    .major_name_e {
         position: absolute;
         top: 35px;
         line-height: 26px;
     }
 
-    .top_box p {
+    .major_name_e {
         color: #707070;
         opacity: 50%;
     }
@@ -33,7 +33,7 @@
 
 /* 학부와 학부설명 */
 @media (min-width: 1240px) {
-    .top_box_text {
+    .major_explanation {
         line-height: 31px;
         color: #707070;
         margin-left: 280px;
@@ -43,7 +43,7 @@
 
 /* 학부명 */
 @media (min-width: 1240px) {
-    .top_box_title {
+    .major_name_k {
         font-size: 28px;
         line-height: 43px;
         position: absolute;
@@ -66,8 +66,6 @@ div {
         border: 1px solid #e5e5e5;
         background-position: 95% bottom;
         background-size: auto 78%;
-        background-color: #f8f8f8;
-        color: darkslategray;
     }
     .bottom_box {
         background-repeat: no-repeat;
@@ -82,5 +80,5 @@ div {
 }
 
 .bottom_box_text {
-    color: darkslategray;
+    color: #707070;
 }

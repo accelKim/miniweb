@@ -1,11 +1,11 @@
 import React from "react";
 import '../css/Location.css';
 import SideMenubar from "../layouts/SideMenubar";
-import CosmetologyMajor from "./CosmetologyMajor";
-import CosmetologyEdGoals from "./CosmetologyEdGoals";
-import CosmetologyCareer from "./CosmetologyCareer";
+import MakeupMajor from "./MakeupMajor";
+import MakeupEdGoals from "./MakeupEdGoals";
+import MakeupCareer from "./MakeupCareer";
 
-function Cosmetology() {
+function MakeupMain() {
     return (
         <div className="cosmetology_department">
             <SideMenubar
@@ -15,12 +15,12 @@ function Cosmetology() {
                 subtitle2="미용학과"
                 link2="/cosmetology_department"
                 link3="/makeup_artistry_department"
-                subtitle3="메이크업학과"
-                contentTitle="미용전공"
-                content={<div><CosmetologyMajor /> <CosmetologyEdGoals /> <CosmetologyCareer /></div>}
+                subtitle3="메이크업전공"
+                contentTitle="메이크업전공"
+                content={<div><MakeupMajor /> <MakeupEdGoals /> <MakeupCareer /></div>}
             />
         </div>
     );
 }
 
-export default Cosmetology;
+export default MakeupMain;

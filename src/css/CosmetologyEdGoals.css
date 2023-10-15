@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Merienda:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300&display=swap');
 @media (min-width: 1240px) {
-    .bottom_box {
+    .major_bottom_content {
         margin-top: 10px;
         padding: 32px 40px;
         border: 1px solid #e5e5e5;
@@ -11,7 +11,7 @@
     }
 }
 
-.bottom_box {
+.major_bottom_content {
     background-repeat: no-repeat;
     word-break: keep-all;
 }
