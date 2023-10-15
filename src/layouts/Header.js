@@ -11,7 +11,7 @@ function Header() {
                     <div id="menuBar">
                         <div id="logo" className="logo-container">
                             <Link to="/">
-                                <img src={OriLogo} alt="logo"/>
+                                <img src={OriLogo} alt="logo" />
                             </Link>
                         </div>
                         <ul id="topMenu">
@@ -56,7 +56,9 @@ function Header() {
                             </li>
                         </ul>
                         <div id="kakaoLoginButton">
-                            <button id="kakaoLogin">Login</button>
+                            <Link to="LoginKakao">
+                                <button id="kakaoLogin">Login</button>
+                            </Link>
                         </div>
                     </div>
                 </header>

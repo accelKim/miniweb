@@ -6,6 +6,9 @@ import  ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./layouts/Header";
 import Home from "./layouts/Home";
+// Header - 로그인
+import LoginKakao from "./login/LoginKakao";
+
 // 학교소개 - 학교위치
 import Location from "./univ_intro/Location";
 // 학교소개 - 기구체계도
@@ -32,6 +35,7 @@ function App() {
           <Route path="/ba" element={<DeptIntro />} />
           <Route path="/dept_intro" element={<DeptIntro />} />
           <Route path="/cosmetology_department" element={<Cosmetology />} />
+          <Route path="/LoginKakao" element={<LoginKakao />} />
         </Routes>
       <Footer />
       </BrowserRouter>
