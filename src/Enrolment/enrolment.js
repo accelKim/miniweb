@@ -8,9 +8,18 @@ function Enrollment() {
 
   const [cart, setCart] = useState([]);
   const [userId, setUserId] = useState('user456'); // 사용자 아이디
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState('');
 
   const addToCart = (course) => {
-    setCart([...cart, course]);
+    // 중복 체크: 이미 장바구니에 있는 항목인지 확인
+    if (!cart.find((item) => item.id === course.id)) {
+      setCart([...cart, course]);
+    } else {
+      const message = '이 강의는 이미 장바구니에 있습니다.';
+      setModalContent(message);
+      setShowModal(true);
+    }
   };
 
   const saveToServer = () => {
@@ -33,6 +42,10 @@ function Enrollment() {
         console.error('장바구니 목록 서버 저장 중 오류 발생:', error);
       });
   };
+  const removeFromCart = (course) => {
+    const updatedCart = cart.filter((item) => item.id !== course.id);
+    setCart(updatedCart);
+  };
 
   return (
     <div className="Enrollment">
@@ -41,21 +54,33 @@ function Enrollment() {
         {courseList.map((course) => (
           <li key={course.id}>
             {course.name} - {course.instructor} - {course.time} - {course.place} - {course.total}{' '}
-            <button onClick={() => addToCart(course)}>장바구니에 추가</button>
+            <button onClick={() => addToCart(course)} style={buttonStyle2}>장바구니에 추가</button>
           </li>
         ))}
-      </ul>
+       </ul>
 
-      <h2>장바구니</h2>
-      <ul style={listStyle}>
-        {cart.map((course) => (
-          <li key={course.id}>
-            {course.name} - {course.instructor}
-          </li>
-        ))}
-      </ul>
-
+    <h2>장바구니</h2>
+    <ul style={listStyle}>
+     {cart.map((course) => (
+     <li key={course.id}>
+        {course.name} - {course.instructor}
+         <button onClick={() => removeFromCart(course)} style={buttonStyle3}>장바구니에서 제외</button>
+     </li>
+     ))}
+    </ul>
       <button onClick={saveToServer} style={buttonStyle}>장바구니에 등록</button>
+
+      {/* 모달 창 */}
+      {showModal && (
+        <div className="modal-container" style={modalContainer}>
+          <div className="modal" style={modalStyle}>
+            <div className="modal-content" style={modal_Content}>
+              <p>{modalContent}</p>
+              <button onClick={() => setShowModal(false)} style={buttonStyle4}>닫기</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -76,4 +101,60 @@ const buttonStyle = {
     position:'relative',
     left:'30px',
   };
+  const buttonStyle2 = {
+    display: 'inline-block',
+    padding: '3px 5px',
+    backgroundColor: 'skyblue',
+    color: 'white',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    margin: '10px',
+    position:'relative',
+    
+  };
+  const buttonStyle3 = {
+    display: 'inline-block',
+    padding: '3px 5px',
+    backgroundColor: 'red',
+    color: 'white',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    margin: '10px',
+    position:'relative',
+    
+  };
+  const buttonStyle4 = {
+    border: 'none',
+    padding: '8px 16px',
+    backgroundColor: '#007bff',
+    color: 'white',
+    borderRadius: '5px',
+    cursor : 'pointer',
+  };
+  
+
+  const modalContainer = {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', /* 반투명한 회색 배경 */
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: '999', /* 모달을 다른 요소 위에 표시 */
+  }
+  const modalStyle={
+    backgroundColor: 'white',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    padding: '16px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+  }
+  const modal_Content = {
+    marginBottom :'16px',
+  }
+
+
 export default Enrollment;
