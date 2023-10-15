@@ -12,6 +12,9 @@ import Location from "./univ_intro/Location";
 import Org from "./org_chart/A";
 // 학부학과
 import DeptIntro from "./dept/DeptIntro";
+import DeptIntro_FusionArt from "./dept_fusionArt/DeptIntro_fusionArt";
+import FusionArt from "./major_fusionArt/fusionArt";
+import DigitalMedia from "./major_fusionArt/digitalMedia";
 
 import Footer from "./layouts/Footer";
 //학사일정 
@@ -25,6 +28,7 @@ import ForumEdit from "./forum/BoardPage/forumEdit";
 import Class_Grade from "./class_grade/class_grade";
 import GradeNotice from "./class_grade/gradeNotice";
 
+
 // index.js에 의해서 App이 불러와짐
 // 여기에는 기본특만 놔두시면 됩니다.(메인은 Home에 모아져 있음)
 function App() {
@@ -37,6 +41,9 @@ function App() {
           <Route path="/location" element={<Location />} />
           <Route path="/orgChart" element={<Org />} />
           <Route path="/ba" element={<DeptIntro />} />
+          <Route path="/cia" element={<DeptIntro_FusionArt />} />
+          <Route path="/video_product_department" element={<FusionArt />} />
+          <Route path="/digital_media_design_department" element={<DigitalMedia />} />
           <Route path="/academic_Calendar" element={<CalendarDetail />} />
           <Route path="/post" element={<Forum />} />
           <Route path="/create" element={<ForumCreate />} />
