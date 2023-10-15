@@ -11,7 +11,8 @@ import Location from "./univ_intro/Location";
 // 학교소개 - 기구체계도
 import Org from "./org_chart/A";
 // 학부학과
-import DeptIntro from "./major/DeptIntro";
+import DeptIntro from "./dept/DeptIntro";
+
 import Footer from "./layouts/Footer";
 //학사일정 
 import CalendarDetail from './academic_Calendar/calendarDetail'
@@ -44,6 +45,7 @@ function App() {
           <Route path="/posts/:id/edit" element={<ForumEdit />} />
           <Route path="/class" element={<Class_Grade />} />
           <Route path="/grade" element={<GradeNotice />} />
+          <Route path="/dept_intro" element={<DeptIntro />} />
 
         </Routes>
       <Footer />
