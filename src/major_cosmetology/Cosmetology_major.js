@@ -2,7 +2,7 @@ import React from "react";
 
 function CosmetologyMajor() {
   return (
-    <div className="cosmetologymajor">
+    <div className="cosmetology_major">
       <div className="major_wrapper">
         <div className="major_top_content">
           <div className="major_img"
