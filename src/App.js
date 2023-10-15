@@ -39,7 +39,7 @@ import DesertDeptIntro from "./dept_desert/DesertDeptIntro";
 import RefinementDeptIntro from "./dept_refinement/RefinementDeptIntro";
 import Culinary_Arts from "./major_culinary Arts/Culinary_Arts";
 
-import Footer from "./layouts/Footer";
+
 import Cosmetology from "./major_cosmetology/Cosmetology";
 import QuickUnderGraduate from "./main/QuickUnderGraduate";
 import DessertAndBaking from "./major_dessertNbaking/DessertAndBaking";
