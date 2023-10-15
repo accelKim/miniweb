@@ -15,9 +15,15 @@ import Location from "./univ_intro/Location";
 import Org from "./org_chart/A";
 // 학부학과
 import DeptIntro from "./dept/DeptIntro";
+import MakeupMain from "./major_makeup/MakeupMain";
+import DesertDeptIntro from "./dept_desert/DesertDeptIntro";
+import RefinementDeptIntro from "./dept_refinement/RefinementDeptIntro";
+import Culinary_Arts from "./major_culinary Arts/Culinary_Arts";
 
 import Footer from "./layouts/Footer";
 import Cosmetology from "./major_cosmetology/Cosmetology";
+import QuickUnderGraduate from "./main/QuickUnderGraduate";
+import DessertAndBaking from "./major_dessertNbaking/DessertAndBaking";
 
 // index.js에 의해서 App이 불러와짐
 // 여기에는 기본특만 놔두시면 됩니다.(메인은 Home에 모아져 있음)
@@ -35,7 +41,20 @@ function App() {
           <Route path="/ba" element={<DeptIntro />} />
           <Route path="/dept_intro" element={<DeptIntro />} />
           <Route path="/cosmetology_department" element={<Cosmetology />} />
+          <Route path="/makeup_artistry_department" element={<MakeupMain />} />
+          <Route path="/dessert_and_baking" element={<DessertAndBaking />} />
+          <Route path="/culinary_arts" element={<Culinary_Arts />} />
+
+          <Route path="/dpca" element={<DesertDeptIntro />} />
+          <Route path="/cla" element={<RefinementDeptIntro />} />
+
+
           <Route path="/LoginKakao" element={<LoginKakao />} />
+
+          <Route path="/ba" element={<QuickUnderGraduate />} />
+          <Route path="/cia" element={<QuickUnderGraduate />} />
+          <Route path="/dpca" element={<QuickUnderGraduate />} />
+          <Route path="/cla" element={<QuickUnderGraduate />} />
         </Routes>
       <Footer />
       </BrowserRouter>
