@@ -36,8 +36,7 @@ function PostEdit() {
 
   return (
     <div>
-      <h1>QnA 수정</h1>
-      <hr style={hrStyle}/><br />
+    
       <label>제목:
         <input type="text" name="title" value={post.title} onChange={handleChange} style={inputStyle} />
       </label>

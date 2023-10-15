@@ -30,11 +30,10 @@ function Header() {
                             </li>
                             <li><a href="#">학사정보</a>
                                 <ul>
-                                    <li><a href="#">학사 일정</a></li>
+                                    <li><a href="/academic_Calendar">학사 일정</a></li>
                                     {/* <li><a href="#">서식 자료실</a></li> */}
                                 </ul>
                             </li>
-
                             <li><a href="#">수업 • 성적</a>
                                 <ul>
                                     <li><a href="#">수업 관련</a></li>
@@ -44,7 +43,7 @@ function Header() {
 
                             <li><a href="#">대학생활</a>
                                 <ul>
-                                    <li><a href="#">게시판</a></li>
+                                    <li><a href="/post">게시판</a></li>
                                     {/* <li><a href="#">학점계산기</a></li> */}
                                 </ul>
                             </li>

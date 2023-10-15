@@ -17,8 +17,6 @@ function PostList() {
 
   return (
     <div>
-      <h1>QnA</h1>
-      <hr style={hrStyle}/>
       <ul>
         {posts.map(post => (
           <li key={post.id}>
