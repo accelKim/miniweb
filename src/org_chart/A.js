@@ -2,7 +2,7 @@ import React from "react";
 import '../css/Location.css';
 import '../css/tree.css';
 import SideMenubar from "../layouts/SideMenubar";
-import A8 from "./a8";
+import Org_chart from "./Org_chart";
 
 
 function Org() {
@@ -12,10 +12,10 @@ function Org() {
                 title="학교소개"
                 subtitle="학교 위치"
                 link1="/location"
-                subtitle2="미용학과"
+                subtitle2="기구체계도"
                 link2="/orgChart"
                 contentTitle="기구체계도"
-                content={<div><A8 /></div>}
+                content={<div><Org_chart /></div>}
             />
         </div>
     );

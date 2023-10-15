@@ -152,12 +152,6 @@ nav {
     color: #f00;
 }
 
-#kakaoLoginButton {
-    background-color: yellow;
-    position: absolute;
-    right: 0;
-}
-
 /* 반응형 스타일 */
 
 /* 1024px일때 */

@@ -15,7 +15,7 @@ const StyledNode = styled.div`
    color: 'white',
   }
 
-function A8() {
+function Org_chart() {
   // 상태 변수를 초기값으로 닫힌 상태를 가지도록 설정
   const [isOpen, setIsOpen] = useState(Array(9).fill(false)); // 9개 노드를 가정
 
@@ -167,4 +167,4 @@ function A8() {
   );
 }
 
-export default A8;
+export default Org_chart;
