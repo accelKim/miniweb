@@ -27,7 +27,8 @@ import ForumEdit from "./forum/BoardPage/forumEdit";
 //수업성적
 import Class_Grade from "./class_grade/class_grade";
 import GradeNotice from "./class_grade/gradeNotice";
-
+//수강신청
+import Enolment_Index from "./Enrolment/enrolment_index";
 
 // index.js에 의해서 App이 불러와짐
 // 여기에는 기본특만 놔두시면 됩니다.(메인은 Home에 모아져 있음)
@@ -52,6 +53,7 @@ function App() {
           <Route path="/class" element={<Class_Grade />} />
           <Route path="/grade" element={<GradeNotice />} />
           <Route path="/dept_intro" element={<DeptIntro />} />
+          <Route path="/enolment" element={<Enolment_Index />} />
         </Routes>
       <Footer />
       </BrowserRouter>

@@ -47,7 +47,7 @@ function Header() {
                                     {/* <li><a href="#">학점계산기</a></li> */}
                                 </ul>
                             </li>
-                            <li><a href="#">수강신청</a>
+                            <li><a href="enolment">수강신청</a>
                                 <ul>
                                     <li><a href="#">장바구니</a></li>
                                 </ul>
