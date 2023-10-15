@@ -20,6 +20,9 @@ import Forum from './forum/BoardPage/forum'
 import ForumCreate from "./forum/BoardPage/forumCreate";
 import ForumDetail from "./forum/BoardPage/forumDetail";
 import ForumEdit from "./forum/BoardPage/forumEdit";
+//수업성적
+import Class_Grade from "./class_grade/class_grade";
+import GradeNotice from "./class_grade/gradeNotice";
 
 // index.js에 의해서 App이 불러와짐
 // 여기에는 기본특만 놔두시면 됩니다.(메인은 Home에 모아져 있음)
@@ -32,7 +35,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/location" element={<Location />} />
           <Route path="/orgChart" element={<Org />} />
           <Route path="/ba" element={<DeptIntro />} />
           <Route path="/academic_Calendar" element={<CalendarDetail />} />
@@ -40,9 +42,9 @@ function App() {
           <Route path="/create" element={<ForumCreate />} />
           <Route path="/posts/:id" element={<ForumDetail />} />
           <Route path="/posts/:id/edit" element={<ForumEdit />} />
+          <Route path="/class" element={<Class_Grade />} />
+          <Route path="/grade" element={<GradeNotice />} />
 
-
-          
         </Routes>
       <Footer />
       </BrowserRouter>

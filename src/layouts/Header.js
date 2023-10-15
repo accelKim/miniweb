@@ -36,8 +36,8 @@ function Header() {
                             </li>
                             <li><a href="#">수업 • 성적</a>
                                 <ul>
-                                    <li><a href="#">수업 관련</a></li>
-                                    <li><a href="#">성적 관련</a></li>
+                                    <li><a href="/class">수업 관련</a></li>
+                                    <li><a href="/grade">성적 관련</a></li>
                                 </ul>
                             </li>
 
