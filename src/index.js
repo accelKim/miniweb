@@ -1,7 +1,13 @@
 // 여기에서 index.html파일을 가져옴
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import  ReactDOM from 'react-dom/client';
+import './css/Header.css'
 import App from './App';
+
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
