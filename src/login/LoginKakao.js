@@ -1,7 +1,8 @@
-// LoginKakao.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const LoginKakao = () => {
+const LoginKakao = ({  }) => {
+    const [isLogged, setIsLogged] = useState(false);
+
     useEffect(() => {
         // KAKAO 로그인
         const script = document.createElement('script');
@@ -26,6 +27,7 @@ const LoginKakao = () => {
                         success: res => {
                             const kakao_account = res.kakao_account;
                             console.log(kakao_account);
+                            setIsLogged(true);
                         }
                     });
                 }
@@ -35,9 +37,15 @@ const LoginKakao = () => {
 
     return (
         <div>
-            <a onClick={kakaoLogin}>
-                <button>Login</button>
-            </a>
+            {isLogged ? (
+                // 로그인 성공 시 버튼 텍스트 변경
+                <button>로그인되었습니다.</button>
+            ) : (
+                // 로그인 버튼
+                <a onClick={kakaoLogin}>
+                    <button>로그인</button>
+                </a>
+            )}
         </div>
     );
 }
