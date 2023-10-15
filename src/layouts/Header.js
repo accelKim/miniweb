@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../css/Header.css';
-import OriLogo from '../images/ori-logo-univname.png'
+import OriLogo from '../images/ori-logo-univname.png';
+import LoginKakao from "../login/LoginKakao";
 
 function Header() {
     return (
@@ -56,15 +57,13 @@ function Header() {
                             </li>
                         </ul>
                         <div id="kakaoLoginButton">
-                            <Link to="LoginKakao">
-                                <button id="kakaoLogin">Login</button>
-                            </Link>
+                            <LoginKakao />
                         </div>
                     </div>
                 </header>
             </div>
         </>
     );
-};
+}
 
 export default Header;

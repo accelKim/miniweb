@@ -1,3 +1,4 @@
+// LoginKakao.js
 import React, { useEffect } from 'react';
 
 const LoginKakao = () => {
@@ -35,7 +36,7 @@ const LoginKakao = () => {
     return (
         <div>
             <a onClick={kakaoLogin}>
-                <img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" alt="Kakao Login" />
+                <button>Login</button>
             </a>
         </div>
     );
