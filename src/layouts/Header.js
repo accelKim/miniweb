@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../css/Header.css';
+import OriLogo from '../images/ori-logo-univname.png'
 
 function Header() {
     return (
@@ -10,7 +11,7 @@ function Header() {
                     <div id="menuBar">
                         <div id="logo" className="logo-container">
                             <Link to="/">
-                                <img src="logo.png" alt="오리대학교 로고" className="logo" />
+                                <img src={OriLogo} alt="logo"/>
                             </Link>
                         </div>
                         <ul id="topMenu">
