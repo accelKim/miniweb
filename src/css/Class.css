@@ -18,7 +18,7 @@ table, td, th {
   .common_sublist {
     color: grey;
 }
-p {
+.header_title_2 {
   font-size: 25px;
   font-weight: bold;
 }
