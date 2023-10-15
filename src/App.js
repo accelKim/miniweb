@@ -11,8 +11,9 @@ import Location from "./univ_intro/Location";
 // 학교소개 - 기구체계도
 import Org from "./org_chart/A";
 // 학부학과
-import DeptIntro from "./major/DeptIntro";
+import DeptIntro from "./dept/DeptIntro";
 import Footer from "./layouts/Footer";
+import Cosmetology from "./cosmetology/Cosmetology";
 
 // index.js에 의해서 App이 불러와짐
 // 여기에는 기본특만 놔두시면 됩니다.(메인은 Home에 모아져 있음)
@@ -28,6 +29,8 @@ function App() {
           <Route path="/location" element={<Location />} />
           <Route path="/orgChart" element={<Org />} />
           <Route path="/ba" element={<DeptIntro />} />
+          <Route path="/dept_intro" element={<DeptIntro />} />
+          <Route path="/cosmetology_department" element={<Cosmetology />} />
         </Routes>
       <Footer />
       </BrowserRouter>
