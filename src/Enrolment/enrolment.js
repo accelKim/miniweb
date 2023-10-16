@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../css/Enrolment.css"
 
 function Enrollment() {
 
@@ -78,28 +79,30 @@ function Enrollment() {
         </tr>
       </thead>
       </table>
-      <ul style={listStyle}>
+      <section className='Section'>
+      <ul className='ulStyle' >
         {courseList.map((course) => (
-          <li key={course.id}> 
+          <li key={course.id} className='keylist'> 
           {course.id} - {course.name} - {course.instructor} - {course.time} - {course.place} - {course.total}{' '}<button onClick={() => addToCart(course)} style={buttonStyle2}>장바구니에 추가</button>
-         <hr></hr>
+          
            
           </li>
         ))}
+        <div className='animation'></div>
        </ul>
-
     <h2>장바구니</h2>
-    <ul style={listStyle}>
+    <ul style={listStyle} className='ulStyle'>
      {cart.map((course) => (
-     <li key={course.id}>
+     <li key={course.id} className='keylist'>
         {course.name} - {course.instructor}
          <button onClick={() => removeFromCart(course)} style={buttonStyle3}>장바구니에서 제외</button>
-         <hr></hr>
+         
      </li>
      ))}
     </ul>
       <button onClick={saveToServer} style={buttonStyle}>장바구니에 등록</button>
-
+      
+      </section>
       {/* 모달 창 */}
       {showModal && (
         <div className="modal-container" style={modalContainer}>
@@ -111,21 +114,22 @@ function Enrollment() {
           </div>
         </div>
       )}
+     
+      
     </div>
   );
 }
 const listStyle ={
-    border :'1px solid black',
-    padding: '20px',
-    margin: '20px',
-    wordSpacing: 'px'
+   
+    padding: 'auto',
+    margin: 'auto',
     
 }
 // 버튼 스타일
 const buttonStyle = {
     display: 'inline-block',
     padding: '10px 20px',
-    backgroundColor: 'blue',
+    backgroundColor: '#1a66b2',
     color: 'white',
     textDecoration: 'none',
     borderRadius: '5px',
@@ -136,7 +140,7 @@ const buttonStyle = {
   const buttonStyle2 = {
     display: 'inline-block',
     padding: '3px 5px',
-    backgroundColor: 'skyblue',
+    backgroundColor: '#0b9fed',
     color: 'white',
     textDecoration: 'none',
     borderRadius: '5px',
@@ -158,7 +162,7 @@ const buttonStyle = {
   const buttonStyle4 = {
     border: 'none',
     padding: '8px 16px',
-    backgroundColor: '#007bff',
+    backgroundColor: '#1a66b2',
     color: 'white',
     borderRadius: '5px',
     cursor : 'pointer',
@@ -189,10 +193,11 @@ const buttonStyle = {
     
   }
   const tableStyle ={
-    width: '920px',
+    width: '910px',
     position:'relative',
     left:'20px'
   }
+ 
 
 
 export default Enrollment;
