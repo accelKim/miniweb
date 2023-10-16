@@ -155,36 +155,42 @@ nav {
 /* 반응형 스타일 */
 
 /* 1024px일때 */
-@media (max-width: 1024px) { /* 수정된 미디어 쿼리 */
+@media (max-width: 1024px) {
     #topMenu {
-        flex-direction: column;
-        margin-top: 50px;
-        display: block; /* 작은 화면에서 메뉴를 세로로 표시합니다. */
-        position: static; /* 고정 위치 제거 */
+        flex-direction: row; /* 가로로 배치되도록 수정 */
+        margin-top: 0;
     }
 
-    #topMenu>li {
-        margin: 5px 0;
+    #topMenu > ul {
+        margin-left: 30px;
     }
 
-    #topMenu>li>a {
+    #topMenu > li {
+        margin: 0 10px; /* 간격을 조절하세요. */
+    }
+
+    #topMenu > li > a {
         padding: 10px;
+        display: block;
+        vertical-align: middle; /* 텍스트를 가운데로 정렬 */
+        position: relative;
+        z-index: 1; /* a 태그를 앞에 표시 */
     }
 
     #menuBar {
         background-color: #1A66B2;
         padding: 10px;
-        position: relative; /* 고정 위치 제거 */
+        position: relative;
     }
 
-    #topMenu>li>ul {
+    #topMenu > li > ul {
         position: static;
         width: 100%;
-        display: none; /* 기본적으로 하위 메뉴를 숨깁니다. */
+        display: none;
     }
 
-    #topMenu>li:hover>ul {
-        display: none; /* 하위 메뉴를 처음에는 숨기도록 이 부분을 'none'으로 변경합니다. */
+    #topMenu > li:hover > ul {
+        display: none;
     }
 
     /* 하위 메뉴를 토글할 버튼을 추가합니다. */
@@ -196,8 +202,10 @@ nav {
         text-align: center;
         cursor: pointer;
         font-weight: 600;
+        z-index: 2; /* 버튼을 a 태그 위에 표시 */
     }
 }
+
 
 /* 768px일때 */
 @media (max-width: 768px) {

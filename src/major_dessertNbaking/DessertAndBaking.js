@@ -11,7 +11,7 @@ function DessertAndBaking() {
             <SideMenubar
                 title="디저트조리학부"
                 subtitle="학부소개"
-                link1="/cla"
+                link1="/dpca"
                 subtitle2="디저트베이커리전공"
                 link2="/dessert_and_baking"
                 link3="/culinary_arts"
