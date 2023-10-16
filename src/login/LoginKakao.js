@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../css/Login.css';
 
 const LoginKakao = () => {
     const [isLogged, setIsLogged] = useState(false);

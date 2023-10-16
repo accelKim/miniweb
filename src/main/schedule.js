@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Schedule.css";
+import { Link } from "react-router-dom";
 
 function Schedule() {
   return (
@@ -9,7 +10,9 @@ function Schedule() {
           <h2 className="scd_header_title">학사일정</h2>
           <p className="scd_header_ment">오리대학교 학사일정을 알려드려요.</p>
           <div className="scd_header_more">
+            <Link to="/academic_Calendar">
               <span>더보기</span>
+            </Link>
           </div>
         </div>
         <div className="scd_content">
