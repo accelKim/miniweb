@@ -9,9 +9,9 @@ function PostCreate() {
 
   const handleCreate = () => {
     // 새 게시글 생성 로직을 구현
-    axios.post('http://localhost:3000/posts', newPost)
+    axios.post('http://localhost:3001/posts', newPost)
       .then(() => {
-        navigate('/');
+        navigate('/post');
       })
       .catch(error => {
         console.error('Error creating post:', error);
@@ -25,8 +25,7 @@ function PostCreate() {
  
   return (
     <div>
-      <h1>QnA 작성</h1>
-      <hr style={hrStyle}/><br />
+    
       <label>제목:
         <input style={inputStyle} type="text" name="title" value={newPost.title} onChange={handleChange} />
       </label>
@@ -36,8 +35,8 @@ function PostCreate() {
         <textarea style={textareaStyle} name="content" value={newPost.content} onChange={handleChange} />
       </label>
       <br />
-      <button onClick={handleCreate} Link="/" style={buttonStyle}>작성</button>
-      <Link to="/" style={buttonStyle2}>취소</Link>
+      <button onClick={handleCreate} Link="/post" style={buttonStyle}>작성</button>
+      <Link to="/post" style={buttonStyle2}>취소</Link>
     </div>
   );
 }

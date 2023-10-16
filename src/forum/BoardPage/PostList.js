@@ -6,7 +6,7 @@ function PostList() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/posts')
+    axios.get('http://localhost:3001/posts')
       .then(response => {
         setPosts(response.data);
       })
@@ -17,8 +17,6 @@ function PostList() {
 
   return (
     <div>
-      <h1>QnA</h1>
-      <hr style={hrStyle}/>
       <ul>
         {posts.map(post => (
           <li key={post.id}>

@@ -1,0 +1,20 @@
+import React from 'react'
+import '../css/DeptIntro.css';
+
+const DeptIntroDetail = () => {
+    return (
+        <div>
+            <div className="top_box">
+                <p>Department of Media & Performing Arts</p>
+                <div className="top_box_title">융합예술학부</div>
+                <div className="top_box_text">
+                융합예술학부는 영상제작 / 미디어디자인 및 연기 / 뮤지컬 / 실용댄스 분야를 중심으로 
+                개인의 다재다능한 예술적 재능이 세상의 변화와 발맞춰 나갈 수 있도록 창의적이고 
+                미래지향적인 교육시스템을 운영합니다. 
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default DeptIntroDetail;

@@ -1,0 +1,88 @@
+/* 테이블 스타일 */
+table, th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* 테이블 머리글 스타일 */
+.theadStyle {
+  background-color: #f8f8f8;
+}
+
+/* 테이블 전체 스타일 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* 셀 스타일 */
+th, td {
+  padding: 15px;
+}
+
+/* 공통 하위 목록 스타일 */
+.common_sublist {
+  color: grey;
+}
+
+/* 제목 2 스타일 */
+.header_title_2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* 리스트 항목 스타일 */
+li {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* 글 본문 스타일 */
+article {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* 반응형 스타일 추가 */
+@media (max-width: 1024px) {
+  table, th, td {
+    font-size: 14px; /* 테이블 글꼴 크기 조정 */
+  }
+
+  .header_title_2 {
+    font-size: 20px; /* 제목 2 글꼴 크기 조정 */
+  }
+}
+
+@media (max-width: 768px) {
+  table, th, td {
+    font-size: 14px; /* 테이블 글꼴 크기 조정 */
+  }
+
+  .header_title_2 {
+    font-size: 20px; /* 제목 2 글꼴 크기 조정 */
+  }
+}
+
+@media (max-width: 425px) {
+  table, th, td {
+    font-size: 14px; /* 테이블 글꼴 크기 조정 */
+  }
+
+  .header_title_2 {
+    font-size: 20px; /* 제목 2 글꼴 크기 조정 */
+  }
+}
+
+@media (max-width: 320px) {
+  table, th, td {
+    font-size: 14px; /* 테이블 글꼴 크기 조정 */
+  }
+
+  .header_title_2 {
+    font-size: 20px; /* 제목 2 글꼴 크기 조정 */
+  }
+}
+

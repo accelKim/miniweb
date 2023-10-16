@@ -19,7 +19,7 @@ function Slide() {
   };
 
   return (
-    <div id="slideShow">
+    <div id="slideShow" style={slideStyle}>
       <div id="slides">
         {slides.map((slide, index) => (
           <img
@@ -43,5 +43,7 @@ function Slide() {
     </div>
   );
 }
-
+const slideStyle ={
+  position: 'relative',
+}
 export default Slide;

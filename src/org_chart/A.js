@@ -9,7 +9,7 @@ function Org() {
     return (
         <div className="org_chart">
             <SideMenubar
-                title="학교소개"
+                title="학교 소개"
                 subtitle="학교 위치"
                 link1="/location"
                 subtitle2="기구체계도"
