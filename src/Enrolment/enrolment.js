@@ -16,7 +16,7 @@ function Enrollment() {
 
   const [cart, setCart] = useState([]);
   const [courseList, setCourseList] = useState([]);
-  const [userId, setUserId] = useState(); // 사용자 아이디
+  const [userId, setUserId] = useState('userABC'); // 사용자 아이디
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
