@@ -9,7 +9,7 @@ function Enolment_Index() {
             <SideMenubar
                 title="수강신청"
                 subtitle="수강신청"
-                link1="/enolment"
+                link2="/enolment"
                 contentTitle="수강신청"
                 content={<div><Enollment /></div>}
                 

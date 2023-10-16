@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../css/Login.css';
 
 const LoginKakao = () => {
     const [isLogged, setIsLogged] = useState(false);
@@ -65,7 +66,7 @@ const LoginKakao = () => {
 
     const kakaoLogout = () => {
         if (window.Kakao.Auth.getAccessToken()) {
-            window.Kakao.Auth.logout(function() {
+            window.Kakao.Auth.logout(function () {
                 setIsLogged(false);
                 setProfileNickname(""); // 로그아웃 시 profileNickname 초기화
                 console.log('로그아웃되었습니다.');
@@ -78,8 +79,8 @@ const LoginKakao = () => {
             {isLogged ? (
                 // 로그인 성공 시 버튼 텍스트 변경
                 <div>
-                    <button>{profileNickname}님이 로그인 하셨습니다.</button>
-                    <button onClick={kakaoLogout} >로그아웃</button>
+                    <button className='logged_in'>{profileNickname}님이 로그인 하셨습니다.</button>
+                    <button className='logOut' onClick={kakaoLogout} >로그아웃</button>
                 </div>
             ) : (
                 // 로그인 버튼
