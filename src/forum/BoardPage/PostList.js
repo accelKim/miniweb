@@ -19,9 +19,10 @@ function PostList() {
     <div>
       <ul>
         {posts.map(post => (
-          <li key={post.id}>
-            <Link to={`/posts/${post.id}`}>
-              <h3 style={postStyle}>{post.title}</h3>
+          <li key={post.id} style={textboxStyle}>
+             
+            <Link to={`/posts/${post.id}`}  >
+           <span style={postidStyle}>{post.id}</span><span style={posttitleStyle}>{post.title}</span> <span style={postdateStyle}>{post.date}</span>
               <hr style={hrStyle}/>
             </Link>
           </li>
@@ -46,8 +47,29 @@ const hrStyle = {
   width: '800px',
   color: 'black',
 }
-const postStyle = {
+const postidStyle = {
   color: 'black',
+  
+}
+const posttitleStyle = {
+  color: 'black',
+  position: 'relative',
+  
+  left: '200px',
+  
+}
+const postdateStyle = {
+  color: 'black',
+  position: 'relative',
+  left:'500px'
+  
+  
+  
+}
+const textboxStyle ={
+  width:'800px',
+  height:'25px',
+  textAlign: 'left',
 }
 
 export default PostList;

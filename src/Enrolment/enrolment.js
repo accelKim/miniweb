@@ -48,6 +48,8 @@ function Enrollment() {
         console.log('장바구니 목록 서버에 저장됨:', data);
         setModalContent('등록을 완료하였습니다.'); // 성공 메시지
         setShowModal(true);
+        // 장바구니 초기화
+        setCart([]);
       })
       .catch((error) => {
         console.error('장바구니 목록 서버 저장 중 오류 발생:', error);
@@ -64,11 +66,24 @@ function Enrollment() {
   return (
     <div className="Enrollment">
       <h2>수강신청 목록</h2>
+      <table className="tableStyle" style={tableStyle}>
+      <thead className="theadStyle">
+        <tr>
+          <th>강의번호</th>
+          <th>강의이름</th>
+          <th>담당교수</th>
+          <th>강의일시</th>
+          <th>강의장소</th>
+          <th>정원</th>
+        </tr>
+      </thead>
+      </table>
       <ul style={listStyle}>
         {courseList.map((course) => (
-          <li key={course.id}>
-            {course.name} - {course.instructor} - {course.time} - {course.place} - {course.total}{' '}
-            <button onClick={() => addToCart(course)} style={buttonStyle2}>장바구니에 추가</button>
+          <li key={course.id}> 
+          {course.id} - {course.name} - {course.instructor} - {course.time} - {course.place} - {course.total}{' '}<button onClick={() => addToCart(course)} style={buttonStyle2}>장바구니에 추가</button>
+         <hr></hr>
+           
           </li>
         ))}
        </ul>
@@ -79,6 +94,7 @@ function Enrollment() {
      <li key={course.id}>
         {course.name} - {course.instructor}
          <button onClick={() => removeFromCart(course)} style={buttonStyle3}>장바구니에서 제외</button>
+         <hr></hr>
      </li>
      ))}
     </ul>
@@ -101,7 +117,9 @@ function Enrollment() {
 const listStyle ={
     border :'1px solid black',
     padding: '20px',
-    margin: '20px'
+    margin: '20px',
+    wordSpacing: 'px'
+    
 }
 // 버튼 스타일
 const buttonStyle = {
@@ -169,6 +187,11 @@ const buttonStyle = {
   const modal_Content = {
     marginBottom :'16px',
     
+  }
+  const tableStyle ={
+    width: '920px',
+    position:'relative',
+    left:'20px'
   }
 
 
