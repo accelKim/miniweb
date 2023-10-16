@@ -45,9 +45,9 @@ function Calendar() {
             <span className="next_year_text">2024</span>년
           </div>
         </div>
-        <div className="calendar_main">
+        <div className="calendar_main" style={{ display: 'flex' }}>
           {/* 캘린더 본체 */}
-          <div className="calendar_body" style={{ display: "table-cell" }}>
+          <div className="calendar_body" style={{ display: viewMode === 'monthly' ? 'block' : 'none' }}>
             <div className="calendar_body_header">
               <span className="year_month">
                 <span className="year">2023</span>.<span className="month">01</span>
@@ -170,7 +170,7 @@ function Calendar() {
             </div>
           </div>
           {/* 캘린더 상세 일정 */}
-          <div className="schedule_detail" style={{ display: "table-cell" }}>
+          <div className="schedule_detail" style={{ display: viewMode === 'monthly' ? 'block' : 'none' }}>
             <h4 className="schedule_detail_header">
               <span className="month">1</span>월 상세일정
             </h4>
@@ -197,7 +197,7 @@ function Calendar() {
           </div>
         </div>
         {/* 연간 학사일정 */}
-        <div className="annual_page table_panel" style={{ display: "none" }}>
+        <div className="annual_page table_panel" style={{ display: viewMode === 'annual' ? 'block' : 'none' }}>
           <table className="info_table">
             <tbody>
               <tr>
