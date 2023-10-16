@@ -1,8 +1,9 @@
 import React from "react";
 import '../css/Location.css';
-import '../css/DeptIntro.css';
+import '../css/Cosmetology.css';
 import SideMenubar from "../layouts/SideMenubar";
 import Video_Major from "./fusionArt_major";
+import FusionArt_Career from "./fusionArt_Career";
 
 function FusionArt() {
     return (
@@ -15,8 +16,8 @@ function FusionArt() {
                 link2="/video_product_department"
                 link3="/digital_media_design_department"
                 subtitle3="디지털미디어디자인학과"
-                contentTitle="학부소개"
-                content={<div><Video_Major /></div>}
+                contentTitle="영상제작학과"
+                content={<div><Video_Major /><FusionArt_Career /> </div>}
             />
         </div>
     );
