@@ -4,7 +4,7 @@ function Enrollment() {
 
   // 데이터를 가져와서 courseList 상태에 저장
   useEffect(() => {
-    fetch('http://localhost:3000/courses')
+    fetch('http://localhost:3001/courses')
       .then((response) => response.json())
       .then((data) => {
         setCourseList(data);
@@ -16,7 +16,7 @@ function Enrollment() {
 
   const [cart, setCart] = useState([]);
   const [courseList, setCourseList] = useState([]);
-  const [userId, setUserId] = useState('userABC'); // 사용자 아이디
+  const [userId, setUserId] = useState(); // 사용자 아이디
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
@@ -33,7 +33,7 @@ function Enrollment() {
 
   const saveToServer = () => {
     // 사용자 아이디와 장바구니 목록을 서버에 저장하는 API 호출
-    fetch('http://localhost:3000/cart', {
+    fetch('http://localhost:3001/cart', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

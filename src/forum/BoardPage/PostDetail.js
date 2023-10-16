@@ -8,7 +8,7 @@ function PostDetail() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/posts/${id}`)
+    axios.get(`http://localhost:3001/posts/${id}`)
       .then(response => {
         setPost(response.data);
       })
@@ -18,7 +18,7 @@ function PostDetail() {
   }, [id]);
 
   const handleDelete = () => {
-    axios.delete(`http://localhost:3000/posts/${id}`)
+    axios.delete(`http://localhost:3001/posts/${id}`)
       .then(() => {
         navigate('/post');
       })

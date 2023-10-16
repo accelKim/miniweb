@@ -9,7 +9,7 @@ function PostCreate() {
 
   const handleCreate = () => {
     // 새 게시글 생성 로직을 구현
-    axios.post('http://localhost:3000/posts', newPost)
+    axios.post('http://localhost:3001/posts', newPost)
       .then(() => {
         navigate('/post');
       })
