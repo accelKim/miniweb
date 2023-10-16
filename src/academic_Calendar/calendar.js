@@ -1,10 +1,9 @@
 import React from 'react';
-import "../Calandar.css";
 
 
 function Calendar() { 
     return(
-        <div className="container">
+        <div className="CT">
   <style type="text/css" dangerouslySetInnerHTML={{ __html: "" }} />
   <div className="calendar_button_section">
     <button className="type_button monthly active" title="월간">

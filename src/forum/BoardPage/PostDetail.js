@@ -8,7 +8,7 @@ function PostDetail() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/posts/${id}`)
+    axios.get(`http://localhost:3001/posts/${id}`)
       .then(response => {
         setPost(response.data);
       })
@@ -18,9 +18,9 @@ function PostDetail() {
   }, [id]);
 
   const handleDelete = () => {
-    axios.delete(`http://localhost:3000/posts/${id}`)
+    axios.delete(`http://localhost:3001/posts/${id}`)
       .then(() => {
-        navigate('/');
+        navigate('/post');
       })
       .catch(error => {
         console.error('Error deleting post:', error);
@@ -30,8 +30,7 @@ function PostDetail() {
 
   return (
     <div>
-      <h1>QnA</h1>
-      <hr style={hrStyle} /><br />
+      
       <h2 style={titleStyle}>{post.title}</h2>
       <hr style={hrStyle} /><br />
       <p style={contentStyle}>{post.content}</p>

@@ -1,0 +1,32 @@
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.theadStyle {
+  background-color: #f8f8f8;
+}
+ table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  } 
+  
+   th, td {
+    padding: 15px;
+  }
+  .common_sublist {
+    color: grey;
+}
+.header_title_2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+li{
+  font-size: 16px;
+  font-weight: normal;
+}
+article{
+  font-size: 16px;
+  line-height: 30px;
+}

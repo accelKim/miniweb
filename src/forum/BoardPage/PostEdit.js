@@ -9,7 +9,7 @@ function PostEdit() {
 
   useEffect(() => {
     // JSON Server의 API 엔드포인트로부터 특정 게시글의 상세 정보를 가져옵니다.
-    axios.get(`http://localhost:3000/posts/${id}`)
+    axios.get(`http://localhost:3001/posts/${id}`)
       .then(response => {
         setPost(response.data);
       })
@@ -20,7 +20,7 @@ function PostEdit() {
 
   const handleEdit = () => {
     // 게시글 수정 로직을 구현
-    axios.put(`http://localhost:3000/posts/${id}`, post)
+    axios.put(`http://localhost:3001/posts/${id}`, post)
       .then(() => {
         navigate(`/posts/${id}`);
       })
@@ -36,8 +36,7 @@ function PostEdit() {
 
   return (
     <div>
-      <h1>QnA 수정</h1>
-      <hr style={hrStyle}/><br />
+    
       <label>제목:
         <input type="text" name="title" value={post.title} onChange={handleChange} style={inputStyle} />
       </label>
