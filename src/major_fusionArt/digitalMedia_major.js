@@ -4,8 +4,8 @@ import digital1 from "../images/digital2.jpg"
 
 
 function Digital_Major() {
- return(
-<div>
+    return (
+        <div>
             <div style={boxStyle}>
                 <p>Digital Media Design</p>
                 <div className="top_box_title" style={titleStyle}>디지털미디어디자인전공</div>
@@ -16,42 +16,42 @@ function Digital_Major() {
                         상 디자인을 바탕으로 한 첨단 디지털 디자인 기법의 습득에서부터 새로운 디지털미디어
                         를 위한 디자인까지, 인간 중심 디자인 실현을 목적으로 기획력과 실행력을 겸비한 전문 디
                         자이너를 양성합니다.</p>
-                     <li style={liStyle}>콘텐츠를 공유하며 느끼는 예술적 재미와 가치 실현</li>
-                     <li style={liStyle}>디지털영상 콘텐츠 분야를 리드할 전문가 양성</li>
-                     <li style={liStyle}>융합적 사고를 통해 인간 고유성과 잠재력을 효과적으로 개발할 수 있는 창의성 가치 강화</li>    
+                    <li style={liStyle}>콘텐츠를 공유하며 느끼는 예술적 재미와 가치 실현</li>
+                    <li style={liStyle}>디지털영상 콘텐츠 분야를 리드할 전문가 양성</li>
+                    <li style={liStyle}>융합적 사고를 통해 인간 고유성과 잠재력을 효과적으로 개발할 수 있는 창의성 가치 강화</li>
                 </div>
             </div><br /><br /><br />
             <div>
                 <div className="top_box_title">졸업 후 진로</div><br /><br /><br />
                 <div>
-                콘텐츠제작자 / 편집 / 사운드믹싱 / VFX프로듀서 / 기획·홍보 및 광고기획 / 영상디자인
+                    콘텐츠제작자 / 편집 / 사운드믹싱 / VFX프로듀서 / 기획·홍보 및 광고기획 / 영상디자인
                 </div>
             </div><br /><br /><br /><br /><br /><br />
             <div>
-            <div className="top_box_title">갤러리</div><br /><br /><br />
-            <img src={digital1} style={imgStyle}></img>
+                <div className="top_box_title">갤러리</div><br /><br /><br />
+                <img src={digital1} style={imgStyle}></img>
             </div>
-            
+
         </div>
-        
+
     );
 }
 const titleStyle = {
-    fontSize : "25px",
-    fontWeight : "bold",
+    fontSize: "25px",
+    fontWeight: "bold",
 }
 const boxStyle = {
-    height : '350px',
-    backgroundColor : '#f8f8f8',
+    height: '350px',
+    backgroundColor: '#f8f8f8',
 }
 const h2Style = {
-    color :'black',
+    color: 'black',
 }
-const liStyle ={
-    color : 'black',
+const liStyle = {
+    color: 'black',
 }
 const imgStyle = {
-    width :'800px',
+    width: '800px',
 }
 
 export default Digital_Major;
