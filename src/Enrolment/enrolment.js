@@ -66,7 +66,7 @@ function Enrollment() {
 
   return (
     <div className="Enrollment">
-      <h2>수강신청 목록</h2>
+      <h2>수강신청 목록</h2><br />
       <table className="tableStyle" style={tableStyle}>
       <thead className="theadStyle">
         <tr>
@@ -89,7 +89,7 @@ function Enrollment() {
           </li>
         ))}
         <div className='animation'></div>
-       </ul>
+       </ul><br />
     <h2>장바구니</h2>
     <ul style={listStyle} className='ulStyle'>
      {cart.map((course) => (
@@ -120,9 +120,9 @@ function Enrollment() {
   );
 }
 const listStyle ={
-   
+  
     padding: 'auto',
-    margin: 'auto',
+    margin: '15px',
     
 }
 // 버튼 스타일
@@ -135,7 +135,7 @@ const buttonStyle = {
     borderRadius: '5px',
     margin: '10px',
     position:'relative',
-    left:'30px',
+    right:'10px'
   };
   const buttonStyle2 = {
     display: 'inline-block',

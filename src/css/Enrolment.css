@@ -45,7 +45,7 @@ word-spacing: 15px;
   margin: 0;
   padding: 0;
   list-style: none;
-  background: #eee5e5;
+  background: #E2E2E2;
 }
 
 .keylist {
@@ -74,7 +74,7 @@ word-spacing: 15px;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f0f0f0;
 }
 
 /* Handle */
