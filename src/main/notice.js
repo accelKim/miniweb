@@ -82,9 +82,9 @@ function Notice() {
           </div>
           <div className="nt_header_bottom">
             <ul className="nt_header_category">
-              <li className={`nt_header_item ${viewMode === 'all' ? 'active' : ''}`} onClick={() => handleCategoryClick('all')}>
+              {/* <li className={`nt_header_item ${viewMode === 'all' ? 'active' : ''}`} onClick={() => handleCategoryClick('all')}>
                 전체
-              </li>
+              </li> */}
               <li className={`nt_header_item ${viewMode === 'general' ? 'active' : ''}`} onClick={() => handleCategoryClick('general')}>
                 일반
               </li>
