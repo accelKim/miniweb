@@ -33,7 +33,7 @@ import Class_Grade from "./class_grade/class_grade";
 import GradeNotice from "./class_grade/gradeNotice";
 //수강신청
 import Enolment_Index from "./Enrolment/enrolment_index";
-import Enrollment from "./Enrolment/enrolment";
+
 
 import MakeupMain from "./major_makeup/MakeupMain";
 import DesertDeptIntro from "./dept_desert/DesertDeptIntro";
@@ -47,10 +47,11 @@ import DessertAndBaking from "./major_dessertNbaking/DessertAndBaking";
 
 
 
+
 // index.js에 의해서 App이 불러와짐
 // 여기에는 기본특만 놔두시면 됩니다.(메인은 Home에 모아져 있음)
-const App = () =>{
-
+function App () {
+ 
   return (
     <div className="App">
       <BrowserRouter>
@@ -93,7 +94,7 @@ const App = () =>{
         </Routes>
       <Footer />
       </BrowserRouter>
-
+    
     </div>
 
   );
