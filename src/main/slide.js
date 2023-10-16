@@ -28,7 +28,7 @@ function Slide() {
             alt=""
             style={{
               display: index === current ? "block" : "none",
-              width: "100%",
+              width: "80%",
               height: "auto",
             }}
           />

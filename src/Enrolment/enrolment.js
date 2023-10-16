@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Enrollment() {
 
@@ -72,7 +73,6 @@ function Enrollment() {
           </li>
         ))}
        </ul>
-
     <h2>장바구니</h2>
     <ul style={listStyle}>
      {cart.map((course) => (
