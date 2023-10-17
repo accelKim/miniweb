@@ -86,7 +86,3 @@ word-spacing: 15px;
 ::-webkit-scrollbar-thumb:hover {
   background: #0b9fed;
 }
-.theadStyle{
-    position: relative;
-    right: 20px;
-}

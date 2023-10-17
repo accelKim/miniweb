@@ -24,12 +24,12 @@ function PostCreate() {
  
   return (
     <div>
-      <label>제목:
-        <input style={inputStyle} type="text" name="title" value={newPost.title} onChange={handleChange} />
+      <label>
+        <input style={inputStyle} type="text" name="title" value={newPost.title} onChange={handleChange} placeholder='제목'/>
       </label>
-      <br /><hr style={hrStyle}/><br />
-      <label>내용:
-        <textarea style={textareaStyle} name="content" value={newPost.content} onChange={handleChange} />
+      <br /><br />
+      <label>
+        <textarea style={textareaStyle} name="content" value={newPost.content} onChange={handleChange} placeholder='내용'/>
       </label>
       <br />
       <button onClick={handleCreate} style={buttonStyle}>작성</button>
