@@ -2,6 +2,7 @@
   "name": "miniweb",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://acceKim.github.io/miniweb/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
@@ -30,6 +31,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -55,6 +58,7 @@
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
     "babel-loader": "^9.1.3",
+    "gh-pages": "^6.0.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
