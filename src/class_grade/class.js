@@ -19,7 +19,7 @@ function Class (){
       </li>
       <li>· 졸업에 필요한 학점은 아래와 같다.</li>
     </ul>
-    <table className="tableStyle">
+    <table className="tableStyle" >
       <thead className="theadStyle">
         <tr>
           <th>구분</th>
@@ -146,7 +146,6 @@ function Class (){
 
     );
 }
-
 
 
 export default Class

@@ -7,6 +7,8 @@ table, th, td {
 /* 테이블 머리글 스타일 */
 .theadStyle {
   background-color: #f8f8f8;
+  position: relative;
+  left: 0px;
 }
 
 /* 테이블 전체 스타일 */
@@ -15,6 +17,7 @@ table {
   width: 100%;
   font-size: 16px;
   font-weight: normal;
+
 }
 
 /* 셀 스타일 */
