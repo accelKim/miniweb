@@ -5,6 +5,10 @@ import DessertAndBakingMajor from "./DessertAndBakingMajor"
 import DessertAndBakingEdGoals from "./DessertAndBakingEdGoals";
 import DesertAndBakingCareer from "./DesertAndBakingCareer";
 
+const textStyles = {
+    color: 'darkslategray',
+};
+
 function DessertAndBaking() {
     return (
         <div className="dessert_and_baking">
@@ -17,7 +21,7 @@ function DessertAndBaking() {
                 link3="/culinary_arts"
                 subtitle3="조리전공"
                 contentTitle="디저트베이커리전공"
-                content={<div><DessertAndBakingMajor /> <DessertAndBakingEdGoals /> <DesertAndBakingCareer /></div>}
+                content={<div><DessertAndBakingMajor style={textStyles} /> <DessertAndBakingEdGoals style={textStyles} /> <DesertAndBakingCareer style={textStyles} /></div>}
             />
         </div>
     );

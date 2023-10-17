@@ -1,11 +1,14 @@
-import React from "react";
-import '../css/Location.css';
+import React from 'react';
 import '../css/DeptIntro.css';
-import SideMenubar from "../layouts/SideMenubar";
-import RefinementDeptIntroDetail from "./RefinementDeptIntroDetail";
-import RefinementEduObj from "./RefinementEduObj";
+import SideMenubar from '../layouts/SideMenubar';
+import RefinementDeptIntroDetail from './RefinementDeptIntroDetail';
+import RefinementEduObj from './RefinementEduObj'
 
-function RefinementDeptIntro() {
+const textStyles = {
+    color: 'darkslategray',
+};
+
+const RefinementDeptIntro = () => {
     return (
         <div className="refinement">
             <SideMenubar

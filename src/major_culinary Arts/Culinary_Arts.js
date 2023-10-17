@@ -5,6 +5,10 @@ import Culinary_ArtsMajor from "./Culinary_ArtsMajor";
 import Culinary_ArtsEdGoals from "./Culinary_ArtsEdGoals";
 import Culinary_ArtsCareer from "./Culinary_ArtsCareer";
 
+const textStyles = {
+    color: 'darkslategray',
+};
+
 function Culinary_Arts() {
     return (
         <div className="culinary_arts_title">

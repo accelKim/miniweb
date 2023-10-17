@@ -5,6 +5,10 @@ import MakeupMajor from "./MakeupMajor";
 import MakeupEdGoals from "./MakeupEdGoals";
 import MakeupCareer from "./MakeupCareer";
 
+const textStyles = {
+    color: 'darkslategray',
+};
+
 function MakeupMain() {
     return (
         <div className="cosmetology_department">
