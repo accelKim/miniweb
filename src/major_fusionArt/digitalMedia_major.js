@@ -22,6 +22,7 @@ function Digital_Major() {
                     <div className="major_explanation">
                         <img src={digitalMediaImg} alt="디지털미디어 이미지" style={{ width: "300px", height: "300px", borderRadius: "10px" }} />
                         <h3 style={textStyles}>"인간존중의 가치를 실천하는 참된 직업교육의 요람"</h3>
+                        <br />
                         <p style={textStyles}>
                             디지털미디어디자인전공은 디지털 환경 변화에 대응할 수 있는 디지털네이티브를 위한 디
                             자인학과입니다. 디지털드로잉, 편집디자인, 모션그래픽, 광고•브랜드디자인 등 시각 및 영
