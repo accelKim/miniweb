@@ -5,9 +5,13 @@ import SideMenubar from "../layouts/SideMenubar";
 import DeptIntroDetail from "./DeptIntroDetail";
 import DeptEduObj from "./DeptEduObj";
 
+const textStyles = {
+    color: 'darkslategray',
+};
+
 function DeptIntro() {
     return (
-        <div className="department_introduce">
+        <div className="department_introduce" style={textStyles}>
             <SideMenubar
                 title="미용예술학부"
                 subtitle="학부소개"

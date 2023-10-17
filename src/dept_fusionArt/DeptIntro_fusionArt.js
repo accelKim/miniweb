@@ -5,9 +5,13 @@ import SideMenubar from "../layouts/SideMenubar";
 import DeptIntroDetail from "./DeptIntroDetail_fusionArt";
 import DeptEduObj from "./DeptEduObj_fusionArt";
 
+const textStyles = {
+    color: 'darkslategray',
+};
+
 function DeptIntro_FusionArt() {
     return (
-        <div className="department_introduce">
+        <div className="department_introduce" style={textStyles}>
             <SideMenubar
                 title="융합예술학부"
                 subtitle="학부소개"

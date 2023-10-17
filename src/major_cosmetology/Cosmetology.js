@@ -5,6 +5,10 @@ import CosmetologyMajor from "./CosmetologyMajor";
 import CosmetologyEdGoals from "./CosmetologyEdGoals";
 import CosmetologyCareer from "./CosmetologyCareer";
 
+const textStyles = {
+    color: 'darkslategray',
+};
+
 function Cosmetology() {
     return (
         <div className="cosmetology_department">
@@ -17,7 +21,13 @@ function Cosmetology() {
                 link3="/makeup_artistry_department"
                 subtitle3="메이크업학과"
                 contentTitle="미용전공"
-                content={<div><CosmetologyMajor /> <CosmetologyEdGoals /> <CosmetologyCareer /></div>}
+                content={
+                    <div>
+                        <CosmetologyMajor style={textStyles} />
+                        <CosmetologyEdGoals style={textStyles} />
+                        <CosmetologyCareer style={textStyles} />
+                    </div>
+                }
             />
         </div>
     );
