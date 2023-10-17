@@ -5,9 +5,13 @@ import SideMenubar from "../layouts/SideMenubar";
 import DesertDeptIntroDetail from "./DesertDeptIntroDetail"
 import DesertEduObj from "./DesertEduObj";
 
+const textStyles = {
+    color: 'darkslategray',
+};
+
 function DesertDeptIntro() {
     return (
-        <div className="desert_department_introduce">
+        <div className="desert_department_introduce" style={textStyles}>
             <SideMenubar
                 title="디저트·조리학부"
                 subtitle="학부소개"

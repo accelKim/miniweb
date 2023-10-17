@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 import '../css/DeptIntro.css';
+
+const textStyles = {
+    color: 'darkslategray',
+};
 
 const DeptIntroDetail = () => {
     return (
-        <div>
+        <div style={textStyles}>
             <div className="top_box">
                 <p>Department of Media & Performing Arts</p>
                 <div className="top_box_title">융합예술학부</div>
@@ -14,7 +18,7 @@ const DeptIntroDetail = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default DeptIntroDetail;
