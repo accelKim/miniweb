@@ -12,6 +12,7 @@ function Calendar() {
     setViewMode('annual');
   };
 
+  
   return (
     <div className="CT">
       <div className="calendar_button_section">

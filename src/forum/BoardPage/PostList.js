@@ -17,7 +17,7 @@ function PostList() {
   }, []);
 
   return (
-    <div>
+    <div style={textStlye}>
       <ul>
         {posts.map((post, index) => (
             <ol className='gradient-list'>
@@ -34,6 +34,9 @@ function PostList() {
   );
 }
 
+const textStlye ={
+  color: '#2F4F4F'
+}
 // 버튼 스타일
 const buttonStyle = {
   display: 'inline-block',
@@ -46,21 +49,20 @@ const buttonStyle = {
 };
 const hrStyle = {
   width: '800px',
-  color: 'black',
+  color: '#2F4F4F',
 }
 const postidStyle = {
-  color: 'black',
+  color: '#2F4F4F',
   
 }
 const posttitleStyle = {
-  color: 'black',
   position: 'relative',
-  
+  color: '#2F4F4F',
   left: '200px',
   
 }
 const postdateStyle = {
-  color: 'black',
+  color: '#2F4F4F',
   position: 'relative',
   left:'500px'
   
@@ -71,6 +73,7 @@ const textboxStyle ={
   width:'800px',
   height:'25px',
   textAlign: 'left',
+  color: '#2F4F4F',
 }
 
 export default PostList;

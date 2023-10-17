@@ -5,7 +5,7 @@
 
 /*** VARIABLES ***/
 /* Colors */
-$black: #1d1f20;
+$black: #2F4F4F;
 $blue: #1a66b2;
 $green: #0b9fed;
 $yellow: #83e4e2;
@@ -25,6 +25,7 @@ $white: #fafafa;
 *,
 *:before,
 *:after {
+  color: #2F4F4F;
   box-sizing: border-box;
 }
 
@@ -32,12 +33,14 @@ html,
 body {
   margin: 0;
   padding: 0;
+  color: #2F4F4F;
 }
 
 body {
   background-color: $white;
   color: $black;
   font-family: 'Raleway', sans-serif;
+  color: #2F4F4F;
 }
 
 
@@ -46,7 +49,9 @@ ol.gradient-list {
   list-style: none;
   margin: 1.75rem 0;
   padding-left: 1rem;
+  color: #2F4F4F;
   > li {
+    color: #2F4F4F;
     background: white;
     border-radius: 0 0.5rem 0.5rem 0.5rem;
     @extend %boxshadow;
@@ -65,8 +70,10 @@ ol.gradient-list {
       position: absolute;
       top: -1rem;
       width: 3rem;
+      color: #2F4F4F;
     }
     &::before {
+      color: #2F4F4F;
       align-items: flex-end;
       @extend %boxshadow;
       content: counter();
@@ -96,6 +103,7 @@ ol.gradient-list {
     }
     
     + li {
+      color: #2F4F4F;
       margin-top: 2rem;
     }
   }
