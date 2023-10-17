@@ -37,12 +37,12 @@ function PostEdit() {
   return (
     <div>
     
-      <label>제목:
-        <input type="text" name="title" value={post.title} onChange={handleChange} style={inputStyle} />
+      <label>
+        <input type="text" name="title" value={post.title} onChange={handleChange} style={inputStyle} placeholder='제목'/>
       </label>
       <br /><br />
-      <label>내용:
-        <textarea name="content" value={post.content} onChange={handleChange} style={textareaStyle}/>
+      <label>
+        <textarea name="content" value={post.content} onChange={handleChange} style={textareaStyle} placeholder='내용'/>
       </label>
       <br />
       <button onClick={handleEdit} style={buttonStyle}>저장</button>

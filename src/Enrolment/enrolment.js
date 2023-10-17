@@ -195,7 +195,7 @@ const buttonStyle = {
   const tableStyle ={
     width: '910px',
     position:'relative',
-    left:'20px'
+    
   }
  
 
