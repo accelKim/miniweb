@@ -79,8 +79,8 @@ const LoginKakao = () => {
             {isLogged ? (
                 // 로그인 성공 시 버튼 텍스트 변경
                 <div>
-                    <button className='logged_in'>{profileNickname}님이 로그인 하셨습니다.</button>
-                    <button className='logOut' onClick={kakaoLogout} >로그아웃</button>
+                    <button>{profileNickname}님이 로그인 하셨습니다.</button>
+                    <button style={{ backgroundColor: "green", marginRight: "10px" }} onClick={kakaoLogout}>로그아웃</button>
                 </div>
             ) : (
                 // 로그인 버튼
