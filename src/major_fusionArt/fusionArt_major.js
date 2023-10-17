@@ -4,7 +4,7 @@ import '../css/Cosmetology.css';
 
 function Video_Major() {
     const liStyle = {
-        color: 'black',
+        color: 'darkslategray',
     };
 
     return (
