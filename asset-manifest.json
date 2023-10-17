@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/miniweb/static/css/main.6cd01b07.css",
+    "main.js": "/miniweb/static/js/main.371f6f52.js",
+    "static/media/baking.png": "/miniweb/static/media/baking.2a8db5a5ebccf91c57d2.png",
+    "static/media/digital2.jpg": "/miniweb/static/media/digital2.d1a4b09d9353ca69ed2e.jpg",
+    "static/media/cla-icon.jpg": "/miniweb/static/media/cla-icon.23d96c8c62bbc58d223a.jpg",
+    "static/media/cooking.png": "/miniweb/static/media/cooking.c8ebdc7483abe5f2efcf.png",
+    "static/media/ba-icon.jpg": "/miniweb/static/media/ba-icon.9166afb4dda4b3f4f5cf.jpg",
+    "static/media/cosmetology_career.png": "/miniweb/static/media/cosmetology_career.9a2aa40bb75ca62e19eb.png",
+    "static/media/digital media design.png": "/miniweb/static/media/digital media design.fd3983ec2488f0943dd9.png",
+    "static/media/ori-logo-univname.png": "/miniweb/static/media/ori-logo-univname.91a15fa87162e07b5831.png",
+    "static/media/dpca-icon.jpg": "/miniweb/static/media/dpca-icon.efd0cd1371bdb5c4f6cc.jpg",
+    "static/media/cia-icon.jpg": "/miniweb/static/media/cia-icon.1d8348e7d6174dc591f6.jpg",
+    "static/media/videoclass.png": "/miniweb/static/media/videoclass.c7491bb5b0390fa51681.png",
+    "index.html": "/miniweb/index.html",
+    "main.6cd01b07.css.map": "/miniweb/static/css/main.6cd01b07.css.map",
+    "main.371f6f52.js.map": "/miniweb/static/js/main.371f6f52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cd01b07.css",
+    "static/js/main.371f6f52.js"
+  ]
+}
