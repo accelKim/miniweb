@@ -4,11 +4,10 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
 function PostCreate() {
-  const [newPost, setNewPost] = useState({ title: '', content: '' });
+  const [newPost, setNewPost] = useState({ title: '', content: '', date: new Date().toLocaleDateString() });
   const navigate = useNavigate();
 
   const handleCreate = () => {
-    // 새 게시글 생성 로직을 구현
     axios.post('http://localhost:3001/posts', newPost)
       .then(() => {
         navigate('/post');
@@ -25,17 +24,15 @@ function PostCreate() {
  
   return (
     <div>
-    
       <label>제목:
         <input style={inputStyle} type="text" name="title" value={newPost.title} onChange={handleChange} />
       </label>
-       <br /><hr style={hrStyle}/><br />
-      
+      <br /><hr style={hrStyle}/><br />
       <label>내용:
         <textarea style={textareaStyle} name="content" value={newPost.content} onChange={handleChange} />
       </label>
       <br />
-      <button onClick={handleCreate} Link="/post" style={buttonStyle}>작성</button>
+      <button onClick={handleCreate} style={buttonStyle}>작성</button>
       <Link to="/post" style={buttonStyle2}>취소</Link>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link, Router} from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import "../../css/PostListStyle.scss"
 
 function PostList() {
   const [posts, setPosts] = useState([]);
@@ -16,15 +17,16 @@ function PostList() {
   }, []);
 
   return (
-    <div>
+    <div style={textStlye}>
       <ul>
-        {posts.map(post => (
-          <li key={post.id}>
-            <Link to={`/posts/${post.id}`}>
-              <h3 style={postStyle}>{post.title}</h3>
-              <hr style={hrStyle}/>
+        {posts.map((post, index) => (
+            <ol className='gradient-list'>
+            <li key={post.id} >
+            <Link to={`/posts/${post.id}`} >
+            <span className='key'>{post.id}</span><span style={posttitleStyle}>{post.title}</span> <span style={postdateStyle}>{post.date}</span> 
             </Link>
           </li>
+          </ol>
         ))}
       </ul>
       <Link to="/create" style={buttonStyle}>글 작성</Link>
@@ -32,11 +34,14 @@ function PostList() {
   );
 }
 
+const textStlye ={
+  color: '#2F4F4F'
+}
 // 버튼 스타일
 const buttonStyle = {
   display: 'inline-block',
   padding: '10px 20px',
-  backgroundColor: 'blue',
+  backgroundColor: '#1a66b2',
   color: 'white',
   textDecoration: 'none',
   borderRadius: '5px',
@@ -44,10 +49,31 @@ const buttonStyle = {
 };
 const hrStyle = {
   width: '800px',
-  color: 'black',
+  color: '#2F4F4F',
 }
-const postStyle = {
-  color: 'black',
+const postidStyle = {
+  color: '#2F4F4F',
+  
+}
+const posttitleStyle = {
+  position: 'relative',
+  color: '#2F4F4F',
+  left: '200px',
+  
+}
+const postdateStyle = {
+  color: '#2F4F4F',
+  position: 'relative',
+  left:'500px'
+  
+  
+  
+}
+const textboxStyle ={
+  width:'800px',
+  height:'25px',
+  textAlign: 'left',
+  color: '#2F4F4F',
 }
 
 export default PostList;
